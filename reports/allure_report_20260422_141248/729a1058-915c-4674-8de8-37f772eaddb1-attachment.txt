@@ -1,0 +1,24 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestExportNonexistentProductMaterial
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：export_nonexistent_product_material
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms ID：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 调用公用登录方法完成登录
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: autotest01
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入基础资料->物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 输入查询条件：父项产品编码 FJ00002
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击查询按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证查询结果显示暂无数据
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击导出按钮，打开导出对话框
+[32mINFO    [0m playwright_ui_automation:logger.py:104 输入导出文件名
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击确认导出按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证未查询到可导出数据的提示信息
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例export_nonexistent_product_material执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestExportNonexistentProductMaterial

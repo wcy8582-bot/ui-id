@@ -1,0 +1,27 @@
+2026-04-24 10:55:53,981 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-24 10:55:53,982 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-24 10:55:53,982 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\customer_file\\test_verify_delete.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260424_105553']
+2026-04-24 10:55:55,611 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyDelete
+2026-04-24 10:55:55,619 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-24 10:55:58,032 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 10:55:58,036 - INFO - logger.py:104 - info - 开始执行用例：verify_delete
+2026-04-24 10:55:58,066 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-24 10:55:58,073 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 10:55:58,081 - INFO - logger.py:104 - info - 执行系统登录
+2026-04-24 10:55:58,094 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-24 10:55:58,108 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-24 10:55:58,119 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-24 10:56:02,432 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-24 10:56:03,037 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-24 10:56:09,084 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-24 10:56:09,087 - INFO - logger.py:104 - info - 进入客户档案模块
+2026-04-24 10:56:10,270 - INFO - logger.py:104 - info - 执行删除目标客商操作，验证提示信息
+2026-04-24 10:56:13,850 - INFO - logger.py:104 - info - 验证完成：正确弹出「客商已启用，不可删除！」提示
+2026-04-24 10:56:13,852 - INFO - logger.py:104 - info - 用例verify_delete执行完毕
+2026-04-24 10:56:13,857 - INFO - logger.py:104 - info - 关闭页面
+2026-04-24 10:56:13,878 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-24 10:56:13,968 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-24 10:56:14,357 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyDelete
+2026-04-24 10:56:15,169 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-24 10:56:15,170 - INFO - logger.py:104 - info - 测试执行完成，耗时: 21.16秒
+2026-04-24 10:56:15,170 - INFO - logger.py:104 - info - 执行结果: 成功

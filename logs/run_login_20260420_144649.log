@@ -1,0 +1,18 @@
+2026-04-20 14:46:49,410 - INFO - logger.py:96 - info - 开始执行测试
+2026-04-20 14:46:49,410 - INFO - logger.py:96 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-20 14:46:49,410 - INFO - logger.py:96 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\project1\\module1\\test_login.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260420_144649']
+2026-04-20 14:46:50,805 - INFO - logger.py:96 - info - 开始执行测试: TestLogin
+2026-04-20 14:46:50,811 - INFO - logger.py:96 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-20 14:46:51,582 - ERROR - logger.py:104 - error - 浏览器操作失败: BrowserType.launch: Executable doesn't exist at C:\Users\user\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-04-20 14:46:51,962 - INFO - logger.py:96 - info - 测试执行完成: TestLogin
+2026-04-20 14:46:53,148 - ERROR - logger.py:104 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-20 14:46:53,150 - INFO - logger.py:96 - info - 测试执行完成，耗时: 3.71秒
+2026-04-20 14:46:53,150 - INFO - logger.py:96 - info - 执行结果: 失败

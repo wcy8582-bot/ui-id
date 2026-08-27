@@ -1,0 +1,115 @@
+2026-04-28 11:20:28,717 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=system_configuration, 用例=verify_edit_function, ms_id=0
+2026-04-28 11:20:28,720 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-28 11:20:28,721 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-28 11:21:28,869 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-28 11:21:28,869 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("系统配置").click()
+    page.get_by_text("标签打印配置").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="678").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("编辑").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入模板ID").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入模板ID").fill("67")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入模板ID").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入模板ID").fill("643")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-28 11:21:28,871 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-28 11:21:28,871 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 11:21:28,871 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-28 11:21:28,871 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 11:21:28,871 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1777346488
+2026-04-28 11:21:28,872 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-28 11:21:28,872 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-28 11:21:28,872 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-28 11:22:26,185 - INFO - logger.py:104 - info - 总token消耗: 3237
+2026-04-28 11:22:26,186 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 57.31秒
+2026-04-28 11:22:26,188 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-28 11:22:26,188 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-28 11:22:26,189 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-28 11:22:26,189 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 11:22:26,189 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-28 11:22:26,189 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 11:22:26,189 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-28 11:22:26,190 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestVerifyEditFunction(BaseTest):
+    """
+    用例名：verify_edit_function
+    用例ms的id：0
+    """
+
+    def test_verify_edit_function(self, page: Page, project_name: str):
+        f"""测试标签打印配置编辑功能
+        用例名：verify_edit_function
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_edit_function")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法
+        logger.info("执行系统登录")
+        self.login(page, project_name)
+        
+        # 导航到标签打印配置页面
+        logger.info("导航进入标签打印配置页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("系统配置").click()
+        page.get_by_text("标签打印配置").click()
+        
+        # 获取目标内容iframe，复用避免重复定位
+        frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        
+        # 打开目标条目的编辑弹窗
+        logger.info("打开目标条目编辑")
+        frame.get_by_role("cell", name="678").click()
+        frame.get_by_text("编辑").first.click()
+        
+        # 第一次修改模板ID并保存
+        logger.info("修改模板ID为67并保存")
+        frame.get_by_role("textbox", name="请输入模板ID").fill("67")
+        frame.get_by_role("button", name="保 存").click()
+        
+        # 第二次修改模板ID并保存
+        logger.info("修改模板ID为643并保存")
+        frame.get_by_role("textbox", name="请输入模板ID").fill("643")
+        frame.get_by_role("button", name="保 存").click()
+        
+        logger.info("verify_edit_function用例执行完成")
+2026-04-28 11:22:26,191 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-28 11:22:26,192 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\system_configuration\test_verify_edit_function.py

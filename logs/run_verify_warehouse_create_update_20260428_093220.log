@@ -1,0 +1,29 @@
+2026-04-28 09:32:20,870 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-28 09:32:20,870 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-28 09:32:20,870 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\base_information\\test_verify_warehouse_create_update.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260428_093220']
+2026-04-28 09:32:23,662 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyWarehouseCreateUpdate
+2026-04-28 09:32:23,672 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-28 09:32:26,030 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 09:32:26,032 - INFO - logger.py:104 - info - 开始执行用例：verify_warehouse_create_update
+2026-04-28 09:32:26,035 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-28 09:32:26,036 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 09:32:26,039 - INFO - logger.py:104 - info - 完成系统登录
+2026-04-28 09:32:26,041 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-28 09:32:26,043 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-28 09:32:26,053 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-28 09:32:30,069 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-28 09:32:30,626 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-28 09:32:36,651 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-28 09:32:36,654 - INFO - logger.py:104 - info - 导航进入仓库管理页面
+2026-04-28 09:32:38,409 - INFO - logger.py:104 - info - 点击创建按钮，打开创建仓库弹窗
+2026-04-28 09:32:39,781 - INFO - logger.py:104 - info - 填写仓库编码和名称信息
+2026-04-28 09:32:41,986 - INFO - logger.py:104 - info - 选择仓库配置项
+2026-04-28 09:32:42,548 - INFO - logger.py:104 - info - 点击保存按钮完成创建
+2026-04-28 09:32:43,186 - INFO - logger.py:104 - info - verify_warehouse_create_update用例执行完成
+2026-04-28 09:32:43,190 - INFO - logger.py:104 - info - 关闭页面
+2026-04-28 09:32:43,206 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-28 09:32:43,262 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-28 09:32:43,554 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyWarehouseCreateUpdate
+2026-04-28 09:32:44,369 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-28 09:32:44,370 - INFO - logger.py:104 - info - 测试执行完成，耗时: 23.47秒
+2026-04-28 09:32:44,371 - INFO - logger.py:104 - info - 执行结果: 成功

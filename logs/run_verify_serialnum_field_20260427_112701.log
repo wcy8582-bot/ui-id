@@ -1,0 +1,30 @@
+2026-04-27 11:27:01,176 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 11:27:01,177 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 11:27:01,178 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_serialnum_field.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_112701']
+2026-04-27 11:27:03,258 - INFO - logger.py:104 - info - 开始执行测试: TestVerifySerialnumField
+2026-04-27 11:27:03,270 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 11:27:05,632 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 11:27:05,637 - INFO - logger.py:104 - info - 开始执行用例：verify_serialnum_field
+2026-04-27 11:27:05,640 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 11:27:05,643 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 11:27:05,646 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 11:27:05,650 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 11:27:05,656 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 11:27:09,856 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 11:27:10,509 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 11:27:16,544 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 11:27:16,548 - INFO - logger.py:104 - info - 系统登录完成
+2026-04-27 11:27:16,550 - INFO - logger.py:104 - info - 进入编码规则配置页面
+2026-04-27 11:27:17,723 - INFO - logger.py:104 - info - 点击创建按钮
+2026-04-27 11:27:18,873 - INFO - logger.py:104 - info - 点击增行按钮
+2026-04-27 11:27:19,475 - INFO - logger.py:104 - info - 展开下拉选择类型
+2026-04-27 11:27:20,058 - INFO - logger.py:104 - info - 选择流水号选项
+2026-04-27 11:27:20,663 - INFO - logger.py:104 - info - 点击取消完成操作
+2026-04-27 11:27:21,300 - INFO - logger.py:104 - info - verify_serialnum_field用例执行完成
+2026-04-27 11:27:21,304 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 11:27:21,325 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 11:27:21,378 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 11:27:21,917 - INFO - logger.py:104 - info - 测试执行完成: TestVerifySerialnumField
+2026-04-27 11:27:22,552 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 11:27:22,553 - INFO - logger.py:104 - info - 测试执行完成，耗时: 21.35秒
+2026-04-27 11:27:22,554 - INFO - logger.py:104 - info - 执行结果: 成功

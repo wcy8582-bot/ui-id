@@ -1,0 +1,136 @@
+2026-04-21 15:56:33,198 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=product_file, 用例=product_picture, ms_id=0
+2026-04-21 15:56:33,201 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-21 15:56:33,201 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-21 15:58:24,233 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-21 15:58:24,233 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("产品档案").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 新增").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("创建产品").get_by_text("产品图片").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^产品图片上传$")).first).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus 上传").nth(1).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus 上传").first.set_input_files("1.png")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("link", name="eye").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^1\.png$")).nth(4)).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True)).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True)).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True)).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div:nth-child(6) > .ant-modal-root > .ant-modal-wrap > .ant-modal > .ant-modal-content > .ant-modal-body")).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^产品图片1\.png上传$")).first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="delete").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-21 15:58:24,235 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-21 15:58:24,235 - INFO - logger.py:104 - info - ============================================================
+2026-04-21 15:58:24,235 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-21 15:58:24,235 - INFO - logger.py:104 - info - ============================================================
+2026-04-21 15:58:24,235 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776758304
+2026-04-21 15:58:24,236 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-21 15:58:24,236 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-21 15:58:24,236 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-21 15:59:22,047 - INFO - logger.py:104 - info - 总token消耗: 3763
+2026-04-21 15:59:22,048 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 57.81秒
+2026-04-21 15:59:22,049 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-21 15:59:22,049 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-21 15:59:22,050 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-21 15:59:22,050 - INFO - logger.py:104 - info - ============================================================
+2026-04-21 15:59:22,050 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-21 15:59:22,050 - INFO - logger.py:104 - info - ============================================================
+2026-04-21 15:59:22,051 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-21 15:59:22,051 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestProductPicture(BaseTest):
+    """
+    用例名：product_picture
+    用例ms的id：0
+    """
+
+    def test_product_picture(self, page: Page, project_name: str):
+        f"""测试产品图片上传预览删除功能
+        用例名：product_picture
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：product_picture")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 调用公用登录方法
+        logger.info("登录系统")
+        self.login(page, project_name)
+        
+        # 进入产品档案模块
+        logger.info("进入产品档案页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("产品档案").click()
+        
+        # 获取iframe上下文，简化后续代码
+        product_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        
+        # 点击新增产品
+        logger.info("点击新增产品按钮")
+        product_frame.get_by_role("button", name="plus-circle 新增").click()
+        
+        # 打开产品图片上传区域
+        logger.info("进入产品图片上传环节")
+        product_frame.get_by_label("创建产品").get_by_text("产品图片").click()
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^产品图片上传$")).first).to_be_visible()
+        
+        # 上传测试图片
+        logger.info("上传测试图片文件1.png")
+        product_frame.get_by_role("button", name="plus 上传").nth(1).click()
+        product_frame.get_by_role("button", name="plus 上传").first.set_input_files("1.png")
+        
+        # 预览上传的图片
+        logger.info("预览上传的图片")
+        product_frame.get_by_role("link", name="eye").click()
+        
+        # 断言预览功能正常
+        logger.info("验证图片预览显示正确")
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^1\.png$")).nth(4)).to_be_visible()
+        expect(product_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True)).to_be_visible()
+        expect(product_frame.locator("div:nth-child(6) > .ant-modal-root > .ant-modal-wrap > .ant-modal > .ant-modal-content > .ant-modal-body")).to_be_visible()
+        
+        # 关闭预览弹窗
+        logger.info("关闭图片预览弹窗")
+        product_frame.get_by_role("dialog", name="1.png").get_by_label("Close", exact=True).click()
+        
+        # 删除测试图片
+        logger.info("删除上传的测试图片")
+        product_frame.locator("div").filter(has_text=re.compile(r"^产品图片1\.png上传$")).first.click()
+        product_frame.get_by_role("button", name="delete").click()
+        
+        logger.info("用例product_picture执行完成")
+2026-04-21 15:59:22,052 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-21 15:59:22,054 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\product_file\test_product_picture.py

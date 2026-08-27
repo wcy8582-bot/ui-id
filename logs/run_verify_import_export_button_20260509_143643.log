@@ -1,0 +1,25 @@
+2026-05-09 14:36:43,222 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 14:36:43,222 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 14:36:43,223 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_import_export_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_143643']
+2026-05-09 14:36:45,251 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyImportExportButton
+2026-05-09 14:36:45,263 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 14:36:49,230 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:36:49,354 - INFO - logger.py:104 - info - 开始执行用例：verify_import_export_button
+2026-05-09 14:36:49,365 - INFO - logger.py:104 - info - 用例ms的id：101312
+2026-05-09 14:36:49,371 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:36:49,376 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 14:36:49,380 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 14:36:49,384 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 14:36:53,381 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 14:36:54,033 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 14:37:00,073 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 14:37:00,080 - INFO - logger.py:104 - info - 进入物料清单页面
+2026-05-09 14:37:01,308 - INFO - logger.py:104 - info - 验证导入导出按钮可见性
+2026-05-09 14:37:02,146 - INFO - logger.py:104 - info - 用例verify_import_export_button执行完成
+2026-05-09 14:37:02,152 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 14:37:02,176 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 14:37:02,229 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 14:37:02,634 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyImportExportButton
+2026-05-09 14:37:03,784 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 14:37:03,786 - INFO - logger.py:104 - info - 测试执行完成，耗时: 20.52秒
+2026-05-09 14:37:03,786 - INFO - logger.py:104 - info - 执行结果: 成功

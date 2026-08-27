@@ -1,0 +1,22 @@
+2026-04-23 16:10:58,821 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-23 16:10:58,822 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-23 16:10:58,822 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_child_product_create.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260423_161058']
+2026-04-23 16:11:00,526 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyChildProductCreate
+2026-04-23 16:11:00,537 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-23 16:11:03,226 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:11:03,231 - INFO - logger.py:104 - info - 开始执行用例：verify_child_product_create
+2026-04-23 16:11:03,237 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-23 16:11:03,242 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:11:03,282 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-23 16:11:03,289 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 16:11:03,302 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-23 16:11:16,506 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-23 16:11:16,509 - INFO - logger.py:104 - info - 登录成功，导航到物料清单页面
+2026-04-23 16:11:17,664 - INFO - logger.py:104 - info - 进入目标物料清单编辑流程
+2026-04-23 16:11:49,939 - INFO - logger.py:104 - info - 关闭页面
+2026-04-23 16:11:49,956 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-23 16:11:50,022 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-23 16:11:50,436 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyChildProductCreate
+2026-04-23 16:11:51,645 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-23 16:11:51,646 - INFO - logger.py:104 - info - 测试执行完成，耗时: 52.80秒
+2026-04-23 16:11:51,646 - INFO - logger.py:104 - info - 执行结果: 失败

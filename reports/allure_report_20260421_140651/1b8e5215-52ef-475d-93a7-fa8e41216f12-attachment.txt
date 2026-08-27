@@ -1,0 +1,21 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行测试: TestStandardTime
+[32mINFO    [0m playwright_ui_automation:logger.py:96 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行用例：standard_time
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:96 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:96 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:96 系统登录完成
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击确定，进入系统主页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 成功进入【基础资料->产品档案】页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击新增产品按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击标准工时选项，开始验证展示效果
+[32mINFO    [0m playwright_ui_automation:logger.py:96 所有断言通过，标准工时展示正常
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例standard_time执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:96 测试执行完成: TestStandardTime

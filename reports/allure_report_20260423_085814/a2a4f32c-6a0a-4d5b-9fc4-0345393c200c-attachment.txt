@@ -1,0 +1,20 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyCreateBomPageInitialization
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_create_page_initialization
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms ID：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录成功，进入菜单导航
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击基础资料菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击物料清单菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击新增按钮，打开创建物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始验证创建页面初始化元素
+[32mINFO    [0m playwright_ui_automation:logger.py:104 所有初始化元素验证通过，用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyCreateBomPageInitialization

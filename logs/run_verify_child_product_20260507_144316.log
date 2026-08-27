@@ -1,0 +1,29 @@
+2026-05-07 14:43:16,575 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-07 14:43:16,575 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-07 14:43:16,576 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_child_product.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260507_144316']
+2026-05-07 14:43:19,872 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyChildProduct
+2026-05-07 14:43:19,885 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-07 14:43:22,905 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 14:43:22,909 - INFO - logger.py:104 - info - 开始执行用例：verify_child_product
+2026-05-07 14:43:22,916 - INFO - logger.py:104 - info - 用例ms ID：0
+2026-05-07 14:43:22,976 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 14:43:23,000 - INFO - logger.py:104 - info - 完成系统登录
+2026-05-07 14:43:23,004 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-07 14:43:23,007 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-07 14:43:23,010 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-07 14:43:27,019 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-07 14:43:27,587 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-07 14:43:33,617 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-07 14:43:33,620 - INFO - logger.py:104 - info - 进入物料清单菜单
+2026-05-07 14:43:34,823 - INFO - logger.py:104 - info - 等待BOM列表加载完成
+2026-05-07 14:43:35,835 - INFO - logger.py:104 - info - 定位并点击第一行的编辑按钮
+2026-05-07 14:43:36,430 - INFO - logger.py:104 - info - 触发添加子项产品操作
+2026-05-07 14:43:37,101 - INFO - logger.py:104 - info - 执行页面操作
+2026-05-07 14:43:38,346 - INFO - logger.py:104 - info - 点击第一行的删除按钮
+2026-05-07 14:43:54,192 - INFO - logger.py:104 - info - 关闭页面
+2026-05-07 14:43:54,204 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-07 14:43:54,217 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-07 14:43:54,480 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyChildProduct
+2026-05-07 14:43:54,994 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-07 14:43:54,995 - INFO - logger.py:104 - info - 测试执行完成，耗时: 38.40秒
+2026-05-07 14:43:54,995 - INFO - logger.py:104 - info - 执行结果: 失败

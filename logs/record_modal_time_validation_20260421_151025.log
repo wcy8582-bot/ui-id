@@ -1,0 +1,137 @@
+2026-04-21 15:10:25,985 - INFO - logger.py:96 - info - 开始录制: 项目=LD, 模块=product_file, 用例=modal_time_validation, ms_id=0
+2026-04-21 15:10:25,989 - INFO - logger.py:96 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-21 15:10:25,990 - INFO - logger.py:96 - info - 已启用忽略 HTTPS 证书错误
+2026-04-21 15:12:45,651 - INFO - logger.py:96 - info - 录制完成，录制完的代码:
+2026-04-21 15:12:45,651 - INFO - logger.py:96 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon@1304")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_label("图标: eye-invisible").locator("svg").click()
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("产品档案").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 新增").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("基础信息产品编码产品名称产品规格产品型号单位千克产品属性产品类型产品来源自制标准工时小时分秒产品有效期保质期天最高库存最低库存预警期天工艺路线备注产品图片上传启")).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("创建产品").get_by_text("标准工时")).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("spinbutton").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("spinbutton").first.fill("1")
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Increase Value").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Increase Value").first.click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Decrease Value").first).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Decrease Value").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Decrease Value").first.click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-21 15:12:45,747 - INFO - logger.py:96 - info - 开始AI代码格式化
+2026-04-21 15:12:45,748 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 15:12:45,748 - INFO - logger.py:96 - info - 开始处理录制代码...
+2026-04-21 15:12:45,748 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 15:12:45,749 - INFO - logger.py:96 - info - 构建提示词完成，时间戳: 1776755565
+2026-04-21 15:12:45,749 - INFO - logger.py:96 - info - 调用AI处理录制代码...
+2026-04-21 15:12:45,749 - INFO - logger.py:96 - info - 开始调用豆包AI API...
+2026-04-21 15:12:45,750 - INFO - logger.py:96 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-21 15:13:33,607 - INFO - logger.py:96 - info - 总token消耗: 3801
+2026-04-21 15:13:33,607 - INFO - logger.py:96 - info - 豆包AI API调用成功，耗时: 47.86秒
+2026-04-21 15:13:33,609 - INFO - logger.py:96 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-21 15:13:33,609 - INFO - logger.py:96 - info - AI处理代码成功
+2026-04-21 15:13:33,609 - INFO - logger.py:96 - info - 提取代码块成功
+2026-04-21 15:13:33,609 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 15:13:33,609 - INFO - logger.py:96 - info - 代码处理完成
+2026-04-21 15:13:33,610 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 15:13:33,610 - INFO - logger.py:96 - info - 代码格式化完成:
+2026-04-21 15:13:33,610 - INFO - logger.py:96 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestModalTimeValidation(BaseTest):
+    """
+    用例名：modal_time_validation
+    用例ms的id：0
+    """
+
+    def test_modal_time_validation(self, page: Page, project_name: str):
+        f"""测试产品档案标准工时验证功能
+        用例名：modal_time_validation
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：modal_time_validation")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用公用登录方法登录系统
+        logger.info("调用公用登录方法完成登录")
+        self.login(page, project_name)
+        
+        # 导航到产品档案页面
+        logger.info("进入基础资料->产品档案页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("产品档案").click()
+
+        # 获取产品档案iframe上下文，简化后续调用
+        product_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        
+        # 点击新增产品按钮
+        logger.info("点击新增产品按钮")
+        product_frame.get_by_role("button", name="plus-circle 新增").click()
+
+        # 验证新增产品弹窗基础元素可见
+        logger.info("验证新增弹窗核心元素可见性")
+        expect(product_frame.get_by_text("基础信息产品编码产品名称产品规格产品型号单位千克产品属性产品类型产品来源自制标准工时小时分秒产品有效期保质期天最高库存最低库存预警期天工艺路线备注产品图片上传启")).to_be_visible()
+        expect(product_frame.get_by_label("创建产品").get_by_text("标准工时")).to_be_visible()
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+
+        # 输入标准工时初始值
+        logger.info("测试标准工时手动输入")
+        product_frame.get_by_role("spinbutton").first.click()
+        product_frame.get_by_role("spinbutton").first.fill("1")
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+
+        # 测试增加值按钮
+        logger.info("测试标准工时增加按钮功能")
+        product_frame.get_by_role("button", name="Increase Value").first.click()
+        product_frame.get_by_role("button", name="Increase Value").first.click()
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+
+        # 测试减少值按钮
+        logger.info("测试标准工时减少按钮功能")
+        expect(product_frame.get_by_role("button", name="Decrease Value").first).to_be_visible()
+        product_frame.get_by_role("button", name="Decrease Value").first.click()
+        product_frame.get_by_role("button", name="Decrease Value").first.click()
+        expect(product_frame.locator("div").filter(has_text=re.compile(r"^标准工时小时分秒$")).first).to_be_visible()
+
+        logger.info("用例modal_time_validation执行完成")
+2026-04-21 15:13:33,611 - INFO - logger.py:96 - info - 不需要AI分层，保存格式化后的代码
+2026-04-21 15:13:33,612 - INFO - logger.py:96 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\product_file\test_modal_time_validation.py

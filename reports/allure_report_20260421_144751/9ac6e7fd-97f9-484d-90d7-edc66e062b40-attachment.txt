@@ -1,0 +1,21 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行测试: TestViewTableBody
+[32mINFO    [0m playwright_ui_automation:logger.py:96 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行用例：view_table_body
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:96 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:96 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击登录后的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击基础资料菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击产品档案菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证表格表头包含所有预期字段
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证第一行操作按钮可见性
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证右上角退出按钮可见性
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例view_table_body执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:96 测试执行完成: TestViewTableBody

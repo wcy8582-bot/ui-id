@@ -1,0 +1,1720 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 131, in runtestprotocol
+    rep = call_and_report(item, "setup", log)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 165, in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 523, in setup
+    col.setup()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1723, in setup
+    self._request._fillfixtures()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 707, in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 539, in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 627, in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1110, in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1202, in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 908, in call_fixture_func
+    fixture_result = next(generator)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 835, in xunit_setup_method_fixture
+    _call_with_optional_argument(func, method)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 731, in _call_with_optional_argument
+    func()
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 176, in setup_method
+    logger.info(f"开始执行测试: {self.__class__.__name__}")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '开始执行测试: TestMaterialListModify'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 131, in runtestprotocol
+    rep = call_and_report(item, "setup", log)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 165, in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 523, in setup
+    col.setup()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1723, in setup
+    self._request._fillfixtures()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 707, in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 539, in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 627, in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1068, in execute
+    fixturedef = request._get_active_fixturedef(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 627, in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1068, in execute
+    fixturedef = request._get_active_fixturedef(argname)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 627, in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1110, in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1202, in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 908, in call_fixture_func
+    fixture_result = next(generator)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 34, in browser
+    logger.info(f"启动浏览器: {browser_type}, 无头模式: {headless}")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '启动浏览器: Chromium, 无头模式: False'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 23, in test_material_list_modify
+    logger.info("=" * 60)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '============================================================'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 24, in test_material_list_modify
+    logger.info(f"开始执行用例：material_list_modify")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '开始执行用例：material_list_modify'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 25, in test_material_list_modify
+    logger.info(f"用例ms的id：0")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '用例ms的id：0'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 26, in test_material_list_modify
+    logger.info("=" * 60)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '============================================================'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 29, in test_material_list_modify
+    self.login(page, project_name)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 200, in login
+    logger.info(f"开始登录 {project_name} 项目...")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '开始登录 LD 项目...'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 29, in test_material_list_modify
+    self.login(page, project_name)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 201, in login
+    logger.info(f"登录URL: {login_url}")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '登录URL: https://test2.saas-test3.supcon.com:32188'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 29, in test_material_list_modify
+    self.login(page, project_name)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 202, in login
+    logger.info(f"用户名: {username}")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '用户名: admin'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 225, in login
+    error_element.wait_for(timeout=5000)
+  File "D:\install\anaconda3\Lib\site-packages\playwright\sync_api\_generated.py", line 18074, in wait_for
+    self._sync(self._impl_obj.wait_for(timeout=timeout, state=state))
+  File "D:\install\anaconda3\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\install\anaconda3\Lib\site-packages\playwright\_impl\_locator.py", line 710, in wait_for
+    await self._frame.wait_for_selector(
+  File "D:\install\anaconda3\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "D:\install\anaconda3\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\install\anaconda3\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("用户名或密码错误") to be visible
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 29, in test_material_list_modify
+    self.login(page, project_name)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 230, in login
+    logger.info(f"{project_name} 项目登录成功！")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: 'LD 项目登录成功！'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 30, in test_material_list_modify
+    logger.info("登录成功，开始导航到物料清单页面")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '登录成功，开始导航到物料清单页面'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 38, in test_material_list_modify
+    logger.info("验证目标物料存在，打开物料详情")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '验证目标物料存在，打开物料详情'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 45, in test_material_list_modify
+    logger.info("开始验证物料详情弹窗各项信息")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '开始验证物料详情弹窗各项信息'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\install\auto_ui-master\src\testcase\LD\bom_management\test_material_list_modify.py", line 57, in test_material_list_modify
+    logger.info("所有断言验证通过，用例执行完成")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '所有断言验证通过，用例执行完成'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 142, in runtestprotocol
+    reports.append(call_and_report(item, "teardown", log, nextitem=nextitem))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 194, in pytest_runtest_teardown
+    item.session._setupstate.teardown_exact(nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 555, in teardown_exact
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1042, in finish
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\allure_commons\_allure.py", line 231, in __call__
+    return self._fixture_function(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 924, in _teardown_yield_fixture
+    next(it)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 112, in page
+    logger.info("关闭页面")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '关闭页面'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 142, in runtestprotocol
+    reports.append(call_and_report(item, "teardown", log, nextitem=nextitem))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 194, in pytest_runtest_teardown
+    item.session._setupstate.teardown_exact(nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 555, in teardown_exact
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1042, in finish
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\allure_commons\_allure.py", line 231, in __call__
+    return self._fixture_function(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 924, in _teardown_yield_fixture
+    next(it)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 86, in context
+    logger.info("关闭浏览器上下文")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '关闭浏览器上下文'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 142, in runtestprotocol
+    reports.append(call_and_report(item, "teardown", log, nextitem=nextitem))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 194, in pytest_runtest_teardown
+    item.session._setupstate.teardown_exact(nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 555, in teardown_exact
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1042, in finish
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\allure_commons\_allure.py", line 231, in __call__
+    return self._fixture_function(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 924, in _teardown_yield_fixture
+    next(it)
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 59, in browser
+    logger.info("关闭浏览器")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '关闭浏览器'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+OSError: [WinError 6] 句柄无效。
+Call stack:
+  File "D:\install\auto_ui-master\run.py", line 205, in <module>
+    run()
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\install\anaconda3\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "D:\install\auto_ui-master\run.py", line 143, in run
+    result = pytest.main(pytest_args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\config\__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 142, in runtestprotocol
+    reports.append(call_and_report(item, "teardown", log, nextitem=nextitem))
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 353, in from_call
+    result: TResult | None = func()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "D:\install\anaconda3\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 194, in pytest_runtest_teardown
+    item.session._setupstate.teardown_exact(nextitem)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\runner.py", line 555, in teardown_exact
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 1042, in finish
+    fin()
+  File "D:\install\anaconda3\Lib\site-packages\allure_commons\_allure.py", line 231, in __call__
+    return self._fixture_function(*args, **kwargs)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\fixtures.py", line 924, in _teardown_yield_fixture
+    next(it)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 839, in xunit_setup_method_fixture
+    _call_with_optional_argument(func, method)
+  File "D:\install\anaconda3\Lib\site-packages\_pytest\python.py", line 731, in _call_with_optional_argument
+    func()
+  File "D:\install\auto_ui-master\src\base\base_test.py", line 180, in teardown_method
+    logger.info(f"测试执行完成: {self.__class__.__name__}")
+  File "D:\install\auto_ui-master\src\common\logger.py", line 104, in info
+    self.get_logger().info(message, *args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "D:\install\anaconda3\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+  File "D:\install\auto_ui-master\src\common\logger.py", line 62, in safe_emit
+    original_emit(record)
+Message: '测试执行完成: TestMaterialListModify'
+Arguments: ()

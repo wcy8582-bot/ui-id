@@ -1,0 +1,20 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyQueryResetBOM
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_query_reset_function
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录成功，导航到物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 获取操作页iframe实例，准备执行查询重置操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 输入查询条件：父项产品编码 FJ00001
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击查询按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击重置按钮，验证重置功能
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例verify_query_reset_function执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyQueryResetBOM

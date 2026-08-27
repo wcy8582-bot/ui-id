@@ -1,0 +1,103 @@
+2026-05-09 10:03:29,360 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=printer_management, 用例=verify_required_field, ms_id=101128
+2026-05-09 10:03:29,362 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 10:03:29,363 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-05-09 10:04:30,146 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-05-09 10:04:30,146 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("系统配置").click()
+    page.get_by_text("打印机管理").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 新增").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="取 消").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-05-09 10:04:30,148 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-05-09 10:04:30,148 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 10:04:30,148 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-05-09 10:04:30,148 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 10:04:30,149 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1778292270
+2026-05-09 10:04:30,149 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-05-09 10:04:30,149 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-05-09 10:04:30,149 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-05-09 10:05:19,411 - INFO - logger.py:104 - info - 总token消耗: 2894
+2026-05-09 10:05:19,412 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 49.26秒
+2026-05-09 10:05:19,415 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-05-09 10:05:19,416 - INFO - logger.py:104 - info - AI处理代码成功
+2026-05-09 10:05:19,416 - INFO - logger.py:104 - info - 提取代码块成功
+2026-05-09 10:05:19,416 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 10:05:19,417 - INFO - logger.py:104 - info - 代码处理完成
+2026-05-09 10:05:19,417 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 10:05:19,417 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-05-09 10:05:19,418 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestPrinterManageRequiredField(BaseTest):
+    """
+    用例名：verify_required_field
+    用例ms的id：101128
+    """
+
+    def test_verify_required_field(self, page: Page, project_name: str):
+        f"""测试打印机管理新增必填项校验
+        用例名：verify_required_field
+        用例ms的id：101128
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_required_field")
+        logger.info(f"用例ms的id：101128")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法
+        self.login(page, project_name)
+        
+        # 导航进入打印机管理页面
+        logger.info("进入打印机管理页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("系统配置").click()
+        page.get_by_text("打印机管理").click()
+        
+        # 获取目标iframe内容帧
+        tab_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        
+        # 核心操作步骤
+        logger.info("点击新增按钮打开新增弹窗")
+        tab_frame.get_by_role("button", name="plus-circle 新增").click()
+        logger.info("未填写信息直接点击保存，触发必填项校验")
+        tab_frame.get_by_role("button", name="保 存").click()
+        logger.info("点击取消关闭新增弹窗")
+        tab_frame.get_by_role("button", name="取 消").click()
+        
+        logger.info("用例verify_required_field执行完成")
+2026-05-09 10:05:19,420 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-05-09 10:05:19,423 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\printer_management\test_verify_required_field.py

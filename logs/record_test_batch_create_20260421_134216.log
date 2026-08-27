@@ -1,0 +1,96 @@
+2026-04-21 13:42:16,250 - INFO - logger.py:96 - info - 开始录制: 项目=LD, 模块=product_file, 用例=test_batch_create, ms_id=0
+2026-04-21 13:42:16,252 - INFO - logger.py:96 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-21 13:42:16,253 - INFO - logger.py:96 - info - 已启用忽略 HTTPS 证书错误
+2026-04-21 13:43:28,391 - INFO - logger.py:96 - info - 录制完成，录制完的代码:
+2026-04-21 13:43:28,392 - INFO - logger.py:96 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("uitest")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon@1304")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("产品档案").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 批量创建").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="增 行删 行序号产品编码产品名称产品规格产品型号产品类型单位产品属性标准工时产品来源工艺路线启用批次管理启用SN").nth(5)).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-21 13:43:28,393 - INFO - logger.py:96 - info - 开始AI代码格式化
+2026-04-21 13:43:28,394 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 13:43:28,395 - INFO - logger.py:96 - info - 开始处理录制代码...
+2026-04-21 13:43:28,395 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 13:43:28,395 - INFO - logger.py:96 - info - 构建提示词完成，时间戳: 1776750208
+2026-04-21 13:43:28,395 - INFO - logger.py:96 - info - 调用AI处理录制代码...
+2026-04-21 13:43:28,396 - INFO - logger.py:96 - info - 开始调用豆包AI API...
+2026-04-21 13:43:28,396 - INFO - logger.py:96 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-21 13:44:04,599 - INFO - logger.py:96 - info - 总token消耗: 2708
+2026-04-21 13:44:04,599 - INFO - logger.py:96 - info - 豆包AI API调用成功，耗时: 36.20秒
+2026-04-21 13:44:04,603 - INFO - logger.py:96 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-21 13:44:04,603 - INFO - logger.py:96 - info - AI处理代码成功
+2026-04-21 13:44:04,603 - INFO - logger.py:96 - info - 提取代码块成功
+2026-04-21 13:44:04,604 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 13:44:04,604 - INFO - logger.py:96 - info - 代码处理完成
+2026-04-21 13:44:04,604 - INFO - logger.py:96 - info - ============================================================
+2026-04-21 13:44:04,604 - INFO - logger.py:96 - info - 代码格式化完成:
+2026-04-21 13:44:04,605 - INFO - logger.py:96 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestBatchCreateProduct(BaseTest):
+    """
+    用例名：test_batch_create
+    用例ms的id：0
+    """
+
+    def test_batch_create(self, page: Page, project_name: str):
+        f"""测试产品批量创建功能
+        用例名：test_batch_create
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行test_batch_create")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用公用登录方法
+        self.login(page, project_name)
+        
+        # 进入产品档案模块
+        logger.info("进入基础资料-产品档案模块")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("产品档案").click()
+        
+        # 获取产品档案iframe上下文，点击批量创建按钮
+        logger.info("点击批量创建按钮")
+        product_iframe = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        product_iframe.get_by_role("button", name="plus-circle 批量创建").click()
+        
+        # 断言批量编辑表格区域可见
+        logger.info("断言批量创建表单区域可见")
+        expect(product_iframe.locator("div").filter(has_text="增 行删 行序号产品编码产品名称产品规格产品型号产品类型单位产品属性标准工时产品来源工艺路线启用批次管理启用SN").nth(5)).to_be_visible()
+        
+        logger.info("test_batch_create执行完成")
+2026-04-21 13:44:04,605 - INFO - logger.py:96 - info - 不需要AI分层，保存格式化后的代码
+2026-04-21 13:44:04,607 - INFO - logger.py:96 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\product_file\test_test_batch_create.py

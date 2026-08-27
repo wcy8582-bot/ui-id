@@ -1,0 +1,155 @@
+# 执行范围配置
+execution_scope:
+  # 目标项目（默认项目，当run/record不传-p参数时使用）
+  target_project: "LD"
+  # 目标模块
+  target_modules: ["*"]
+
+# 浏览器配置
+browser:
+  # 浏览器类型: Chromium, Firefox, WebKit
+  browser_type: "Chromium"
+  # 无头模式
+  headless: false
+  # 窗口大小
+  viewport_size: {"width": 1920, "height": 1080}
+  # 执行速度（毫秒）
+  slow_mo: 1000
+  # 默认超时时间（毫秒）
+  default_timeout: 600000000
+  # 忽略HTTPS错误
+  ignore_https_errors: true
+  # 全屏模式
+  fullscreen: true
+
+# 移动端配置
+mobile:
+  # Appium服务器地址
+  appium_host: "127.0.0.1"
+  # Appium服务器端口
+  appium_port: 4723
+  # 默认设备名称
+  device_name: "emulator-5554"
+  # 平台版本
+  platform_version: "12"
+  # 应用包名
+  app_package: "com.supcon.mobile.flexnow"
+  # 自动化工具名称
+  automation_name: "UiAutomator2"
+  # 是否重置应用状态
+  no_reset: true
+  # 是否自动启动应用
+  auto_launch: true
+  # 应用等待Activity
+  app_wait_activity: "*"
+  # 新命令超时时间（秒）
+  new_command_timeout: 300
+
+# 用例执行配置
+execution:
+  # 最大重试次数
+  max_retry_count: 2
+  # 并行执行
+  run_in_parallel: true
+  # 并行工作线程数
+  parallel_workers: 1
+  # 用例过滤表达式
+  case_filter: ""
+  # 失败立即停止
+  fail_fast: false
+
+# 路径配置
+paths:
+  # 日志根目录
+  logs_root_dir: "logs"
+  # 截图根目录
+  screenshots_root_dir: "screenshots"
+  # 报告根目录
+  reports_root_dir: "reports"
+  # 视频根目录
+  videos_root_dir: "videos"
+
+# 视频录制配置
+video:
+  # 视频质量（影响文件大小）：low/medium/high
+  video_quality: "low"
+  # 是否保留视频目录结构
+  preserve_output_dir: true
+
+# 全局开关
+global:
+  # 启用全步骤截图
+  enable_full_step_screenshot: true
+  # 启用视频录制
+  enable_video_record: true
+  # 启用调试日志
+  enable_debug_log: false
+  # 自动清理过期文件
+  auto_clean_expired_files: true
+  # 文件保留天数
+  expired_days: 7
+
+# 数据库配置
+database:
+  # 是否启用数据库保存
+  enabled: true
+  # 数据库类型: sqlite / mysql
+  backend: "sqlite"
+  # SQLite 数据库文件路径（相对于项目根目录，仅 backend 为 sqlite 时生效）
+  sqlite_path: "data/test_results.db"
+  # MySQL 配置（仅 backend 为 mysql 时生效）
+  host: "10.52.54.101"
+  # 数据库端口
+  port: 3306
+  # 数据库用户名
+  user: "root"
+  # 数据库密码（建议从环境变量读取）
+  password: "Password123@mysql"
+  # 数据库名称
+  database_name: "qm"
+  # 字符集
+  charset: "utf8mb4"
+  # 连接超时时间（秒）
+  connect_timeout: 300
+
+# 项目登录信息
+project_login:
+  # LD项目登录信息
+  LD:
+    login_url: "https://poc02.iclouddemo.supcon.com/lingoWeb/" ##https://poc02.iclouddemo.supcon.com/
+    username: "uitest"
+    password: "Supcon@1304"
+# 大模型配置
+model_config:
+  # API基础URL，支持不同大模型服务
+  API_BASE_URL: "https://ark.cn-beijing.volces.com/api/v3"
+  # API密钥，建议从环境变量读取
+  API_KEY: "97fc0256-d7bb-4cd1-9738-d5bf9cde11cd"
+#  API_KEY: "97111111fc0256-d7bb-4cd1-9738-d5bf9cde11cd"
+  # 模型名称
+  # MODEL_NAME: "doubao-seed-2-0-code-preview-260215"
+  MODEL_NAME: "doubao-seed-2-0-lite-260428"
+  # 请求超时时间（秒）
+  REQUEST_TIMEOUT: 30
+  # 温度参数，控制生成内容的随机性
+  TEMPERATURE: 0.3
+  # 最大token数
+  MAX_TOKENS: 20000
+  # top_p参数
+  TOP_P: 0.9
+
+# 重试配置
+retry_config:
+  # 最大重试次数
+  MAX_RETRY_COUNT: 3
+  # 重试间隔（秒）
+  RETRY_INTERVAL: 2
+
+# Webhook 配置
+webhook:
+  # 是否启用 webhook 推送
+  enabled: false
+  # webhook 推送地址
+  url: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b519ceb0-2d99-4119-8abb-2d97f67291b4"
+  # 用例管理平台地址
+  case_platform_url: "10.30.31.39：5000"

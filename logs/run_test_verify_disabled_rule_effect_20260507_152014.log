@@ -1,0 +1,28 @@
+2026-05-07 15:20:14,725 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-07 15:20:14,726 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-07 15:20:14,726 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_test_verify_disabled_rule_effect.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260507_152014']
+2026-05-07 15:20:16,695 - INFO - logger.py:104 - info - 开始执行测试: TestCodingRuleConfig
+2026-05-07 15:20:16,709 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-07 15:20:19,561 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 15:20:19,564 - INFO - logger.py:104 - info - 开始执行用例：test_verify_disabled_rule_effect
+2026-05-07 15:20:19,570 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-07 15:20:19,573 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 15:20:19,576 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-07 15:20:19,579 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-07 15:20:19,581 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-07 15:20:23,216 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-07 15:20:23,778 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-07 15:20:29,797 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-07 15:20:29,800 - INFO - logger.py:104 - info - 导航到编码规则配置页面
+2026-05-07 15:20:30,983 - INFO - logger.py:104 - info - 打开新增编码规则弹窗
+2026-05-07 15:20:31,894 - INFO - logger.py:104 - info - 选择业务类型：采购入库批号
+2026-05-07 15:20:33,053 - INFO - logger.py:104 - info - 增行并填写固定值规则信息
+2026-05-07 15:20:35,353 - INFO - logger.py:104 - info - 点击取消按钮，退出新增
+2026-05-07 15:20:35,918 - INFO - logger.py:104 - info - test_verify_disabled_rule_effect 用例执行完成
+2026-05-07 15:20:35,922 - INFO - logger.py:104 - info - 关闭页面
+2026-05-07 15:20:35,939 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-07 15:20:35,982 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-07 15:20:36,297 - INFO - logger.py:104 - info - 测试执行完成: TestCodingRuleConfig
+2026-05-07 15:20:37,177 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-07 15:20:37,181 - INFO - logger.py:104 - info - 测试执行完成，耗时: 22.40秒
+2026-05-07 15:20:37,182 - INFO - logger.py:104 - info - 执行结果: 成功

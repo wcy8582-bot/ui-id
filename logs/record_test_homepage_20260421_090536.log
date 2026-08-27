@@ -1,0 +1,13 @@
+2026-04-21 09:05:36,236 - INFO - logger.py:96 - info - ¿ªÊ¼Â¼ÖÆ: ÏîÄ¿=TS1, Ä£¿é=module1, ÓÃÀý=test_homepage, ms_id=0
+2026-04-21 09:05:36,251 - INFO - logger.py:96 - info - Æô¶¯Playwright Codegen£¬ä¯ÀÀÆ÷: chromium£¬URL: https://test2.saas-test3.supcon.com:32188/
+2026-04-21 09:05:54,232 - ERROR - logger.py:104 - error - Â¼ÖÆÊ§°Ü: node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+[Error: net::ERR_CERT_AUTHORITY_INVALID at https://test2.saas-test3.supcon.com:32188/
+Call log:
+[2m  - navigating to "https://test2.saas-test3.supcon.com:32188/", waiting until "load"[22m
+]
+
+Node.js v24.13.0
+

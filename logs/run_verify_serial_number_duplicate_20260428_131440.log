@@ -1,0 +1,6 @@
+2026-04-28 13:14:40,694 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-28 13:14:40,695 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-28 13:14:40,695 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\printer_management\\test_verify_serial_number_duplicate.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260428_131440']
+2026-04-28 13:14:42,819 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-28 13:14:42,820 - INFO - logger.py:104 - info - 测试执行完成，耗时: 2.10秒
+2026-04-28 13:14:42,821 - INFO - logger.py:104 - info - 执行结果: 失败

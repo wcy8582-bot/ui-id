@@ -1,0 +1,26 @@
+2026-05-09 14:40:36,938 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 14:40:36,938 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 14:40:36,939 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_constant_field.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_144036']
+2026-05-09 14:40:38,768 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyConstantField
+2026-05-09 14:40:38,781 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 14:40:42,482 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:40:42,531 - INFO - logger.py:104 - info - 开始执行用例：verify_constant_field
+2026-05-09 14:40:42,547 - INFO - logger.py:104 - info - 用例ms ID：101099
+2026-05-09 14:40:42,555 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:40:42,564 - INFO - logger.py:104 - info - 执行系统登录
+2026-05-09 14:40:42,570 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 14:40:42,580 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 14:40:42,586 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 14:40:46,566 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 14:40:47,187 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 14:40:53,216 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 14:40:53,219 - INFO - logger.py:104 - info - 进入编码规则配置页面
+2026-05-09 14:40:54,424 - INFO - logger.py:104 - info - 开始新增编码规则，测试固定字段输入
+2026-05-09 14:40:58,563 - INFO - logger.py:104 - info - 测试操作完成，点击取消
+2026-05-09 14:40:59,160 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 14:40:59,175 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 14:40:59,232 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 14:40:59,546 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyConstantField
+2026-05-09 14:41:00,543 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 14:41:00,545 - INFO - logger.py:104 - info - 测试执行完成，耗时: 23.57秒
+2026-05-09 14:41:00,545 - INFO - logger.py:104 - info - 执行结果: 成功

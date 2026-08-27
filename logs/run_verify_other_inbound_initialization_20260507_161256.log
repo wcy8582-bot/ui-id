@@ -1,0 +1,27 @@
+2026-05-07 16:12:56,060 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-07 16:12:56,061 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-07 16:12:56,062 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_other_inbound_initialization.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260507_161256']
+2026-05-07 16:12:57,869 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyOtherInboundInitialization
+2026-05-07 16:12:57,882 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-07 16:13:01,389 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 16:13:01,491 - INFO - logger.py:104 - info - 开始执行用例：verify_other_inbound_initialization
+2026-05-07 16:13:01,538 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-07 16:13:01,546 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 16:13:01,550 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-07 16:13:01,555 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-07 16:13:01,558 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-07 16:13:05,224 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-07 16:13:05,784 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-07 16:13:11,809 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-07 16:13:11,812 - INFO - logger.py:104 - info - 进入编码规则配置菜单
+2026-05-07 16:13:12,907 - INFO - logger.py:104 - info - 等待规则列表加载
+2026-05-07 16:13:13,927 - INFO - logger.py:104 - info - 点击第一个'查看'按钮
+2026-05-07 16:13:14,594 - INFO - logger.py:104 - info - 完成查看，点击返回
+2026-05-07 16:13:15,160 - INFO - logger.py:104 - info - 用例verify_other_inbound_initialization执行完成
+2026-05-07 16:13:15,164 - INFO - logger.py:104 - info - 关闭页面
+2026-05-07 16:13:15,185 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-07 16:13:15,256 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-07 16:13:15,686 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyOtherInboundInitialization
+2026-05-07 16:13:16,698 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-07 16:13:16,763 - INFO - logger.py:104 - info - 测试执行完成，耗时: 20.60秒
+2026-05-07 16:13:16,769 - INFO - logger.py:104 - info - 执行结果: 成功

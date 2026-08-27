@@ -1,0 +1,108 @@
+2026-04-20 14:24:39,018 - INFO - logger.py:97 - info - 开始录制: 项目=project1, 模块=module1, 用例=login, ms_id=0
+2026-04-20 14:24:39,024 - INFO - logger.py:97 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://www.baidu.com
+2026-04-20 14:25:38,591 - INFO - logger.py:97 - info - 录制完成，录制完的代码:
+2026-04-20 14:25:38,591 - INFO - logger.py:97 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context()
+    page = context.new_page()
+    page.goto("https://www.baidu.com/")
+    with page.expect_popup() as page1_info:
+        page.get_by_role("link", name=" 建设网络强国").click()
+    page1 = page1_info.value
+    page1.get_by_text("杭州榜").click()
+    with page1.expect_popup() as page2_info:
+        page1.get_by_role("link", name="杭州今天多云 降雨已蓄势待发").click()
+    page2 = page2_info.value
+    page2.close()
+    page1.close()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-20 14:25:38,592 - INFO - logger.py:97 - info - 开始AI代码格式化
+2026-04-20 14:25:38,593 - INFO - logger.py:97 - info - ============================================================
+2026-04-20 14:25:38,593 - INFO - logger.py:97 - info - 开始处理录制代码...
+2026-04-20 14:25:38,593 - INFO - logger.py:97 - info - ============================================================
+2026-04-20 14:25:38,593 - INFO - logger.py:97 - info - 构建提示词完成，时间戳: 1776666338
+2026-04-20 14:25:38,593 - INFO - logger.py:97 - info - 调用AI处理录制代码...
+2026-04-20 14:25:38,594 - INFO - logger.py:97 - info - 开始调用豆包AI API...
+2026-04-20 14:25:38,594 - INFO - logger.py:97 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-20 14:26:19,475 - INFO - logger.py:97 - info - 总token消耗: 2687
+2026-04-20 14:26:19,475 - INFO - logger.py:97 - info - 豆包AI API调用成功，耗时: 40.88秒
+2026-04-20 14:26:19,476 - INFO - logger.py:97 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-20 14:26:19,476 - INFO - logger.py:97 - info - AI处理代码成功
+2026-04-20 14:26:19,477 - INFO - logger.py:97 - info - 提取代码块成功
+2026-04-20 14:26:19,477 - INFO - logger.py:97 - info - ============================================================
+2026-04-20 14:26:19,477 - INFO - logger.py:97 - info - 代码处理完成
+2026-04-20 14:26:19,477 - INFO - logger.py:97 - info - ============================================================
+2026-04-20 14:26:19,477 - INFO - logger.py:97 - info - 代码格式化完成:
+2026-04-20 14:26:19,478 - INFO - logger.py:97 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestLogin(BaseTest):
+    """
+    用例名：login
+    用例ms的id：0
+    """
+
+    def test_login(self, page: Page, project_name: str):
+        f"""测试百度页面跳转流程
+        用例名：login
+        用例ms的id：0
+        项目名：{project_name}
+        
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：login")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 调用封装好的公用登录方法
+        logger.info("完成系统登录")
+        self.login(page, project_name)
+        
+        # 导航到百度首页
+        logger.info("导航到百度首页")
+        page.goto("https://www.baidu.com/")
+        
+        # 点击链接打开新页面
+        logger.info("点击「 建设网络强国」链接，打开新页面")
+        with page.expect_popup() as page1_info:
+            page.get_by_role("link", name=" 建设网络强国").click()
+        page1 = page1_info.value
+        
+        # 点击杭州榜
+        logger.info("点击「杭州榜」选项")
+        page1.get_by_text("杭州榜").click()
+        
+        # 点击新闻链接打开新页面
+        logger.info("点击「杭州今天多云 降雨已蓄势待发」链接，打开新闻详情页")
+        with page1.expect_popup() as page2_info:
+            page1.get_by_role("link", name="杭州今天多云 降雨已蓄势待发").click()
+        page2 = page2_info.value
+        
+        # 关闭所有打开的页面
+        logger.info("关闭所有打开的页面，清理测试环境")
+        page2.close()
+        page1.close()
+        page.close()
+
+        logger.info("用例执行完成")
+2026-04-20 14:26:19,479 - INFO - logger.py:97 - info - 不需要AI分层，保存格式化后的代码
+2026-04-20 14:26:19,480 - INFO - logger.py:97 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\project1\module1\test_login.py

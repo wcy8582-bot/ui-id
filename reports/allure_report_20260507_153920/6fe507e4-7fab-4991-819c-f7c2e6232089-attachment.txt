@@ -1,0 +1,22 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyEnableSureAction
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_enable_sure_action
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入编码规则配置菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 选择目标编码规则，进入编辑
+[32mINFO    [0m playwright_ui_automation:logger.py:104 等待规则列表加载
+[32mINFO    [0m playwright_ui_automation:logger.py:104 查找第一个状态为“停用”的规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击保存按钮提交编辑操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 verify_enable_sure_action用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyEnableSureAction

@@ -1,0 +1,25 @@
+2026-05-07 13:48:53,846 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-07 13:48:53,847 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-07 13:48:53,848 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_add_child_product.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260507_134853']
+2026-05-07 13:48:56,396 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyAddChildProduct
+2026-05-07 13:48:56,412 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-07 13:48:59,686 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 13:48:59,693 - INFO - logger.py:104 - info - 开始执行用例：verify_add_child_product
+2026-05-07 13:48:59,716 - INFO - logger.py:104 - info - 用例ms ID：0
+2026-05-07 13:48:59,723 - INFO - logger.py:104 - info - ============================================================
+2026-05-07 13:48:59,726 - INFO - logger.py:104 - info - 执行系统登录
+2026-05-07 13:48:59,730 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-07 13:48:59,733 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-07 13:48:59,736 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-07 13:49:04,088 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-07 13:49:04,675 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-07 13:49:10,702 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-07 13:49:10,705 - INFO - logger.py:104 - info - 进入物料清单页面
+2026-05-07 13:49:11,795 - INFO - logger.py:104 - info - 验证目标物料行和编辑按钮可见
+2026-05-07 13:49:16,998 - INFO - logger.py:104 - info - 关闭页面
+2026-05-07 13:49:17,014 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-07 13:49:17,077 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-07 13:49:17,414 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyAddChildProduct
+2026-05-07 13:49:18,332 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-07 13:49:18,333 - INFO - logger.py:104 - info - 测试执行完成，耗时: 24.46秒
+2026-05-07 13:49:18,333 - INFO - logger.py:104 - info - 执行结果: 失败

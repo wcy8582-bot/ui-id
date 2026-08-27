@@ -1,0 +1,11 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行测试: TestLogin
+[32mINFO    [0m playwright_ui_automation:logger.py:96 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行用例：login
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 完成系统登录
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:96 测试执行完成: TestLogin

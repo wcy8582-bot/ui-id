@@ -1,0 +1,89 @@
+2026-04-23 14:02:06,281 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=verify_bom_template_reset, ms_id=0
+2026-04-23 14:02:06,283 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 14:02:06,284 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 14:03:34,561 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 14:03:34,561 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_title("父项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").fill("FJ00001")
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").nth(4)).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="查 询").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="重 置").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").nth(4)).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 14:03:34,564 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 14:03:34,564 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:03:34,565 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 14:03:34,565 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:03:34,565 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776924214
+2026-04-23 14:03:34,566 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 14:03:34,566 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 14:03:34,567 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 14:03:45,642 - ERROR - logger.py:112 - error - HTTP请求出错: HTTPSConnectionPool(host='ark.cn-beijing.volces.com', port=443): Max retries exceeded with url: /api/v3/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='ark.cn-beijing.volces.com', port=443): Failed to resolve 'ark.cn-beijing.volces.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-23 14:03:45,643 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'str'>
+2026-04-23 14:03:45,643 - WARNING - logger.py:108 - warning - AI返回格式不正确，期望dict包含'choices'，实际类型: <class 'str'>
+2026-04-23 14:03:45,643 - WARNING - logger.py:108 - warning - AI返回内容: 请求出错: HTTPSConnectionPool(host='ark.cn-beijing.volces.com', port=443): Max retries exceeded with url: /api/v3/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='ark.cn-beijing.volces.com', port=443): Failed to resolve 'ark.cn-beijing.volces.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-23 14:03:45,644 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 14:03:45,644 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_title("父项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").fill("FJ00001")
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").nth(4)).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="查 询").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="重 置").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").nth(4)).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 14:03:45,645 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 14:03:45,646 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_verify_bom_template_reset.py

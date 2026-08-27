@@ -1,0 +1,45 @@
+2026-05-09 16:04:23,721 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 16:04:23,722 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 16:04:23,722 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\interface_solution_configuration', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_160423']
+2026-05-09 16:04:25,539 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyBusinessTree
+2026-05-09 16:04:25,548 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 16:04:29,253 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:04:29,257 - INFO - logger.py:104 - info - 开始执行用例：verify_business_tree
+2026-05-09 16:04:29,260 - INFO - logger.py:104 - info - 用例ms ID：100879
+2026-05-09 16:04:29,262 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:04:29,265 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 16:04:29,268 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 16:04:29,271 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 16:04:32,886 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 16:04:33,537 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 16:04:39,567 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 16:04:39,573 - INFO - logger.py:104 - info - 登录成功，导航到目标功能页面
+2026-05-09 16:04:41,293 - INFO - logger.py:104 - info - 逐层展开业务树折叠节点
+2026-05-09 16:04:44,026 - INFO - logger.py:104 - info - 用例verify_business_tree(ms ID: 100879)执行完成
+2026-05-09 16:04:44,036 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 16:04:44,062 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 16:04:44,128 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 16:04:44,506 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyBusinessTree
+2026-05-09 16:04:44,530 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyInterfaceIntegrationSave
+2026-05-09 16:04:44,532 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 16:04:48,154 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:04:48,159 - INFO - logger.py:104 - info - 开始执行verify_interface_integration_save
+2026-05-09 16:04:48,161 - INFO - logger.py:104 - info - 用例ms的id：100881
+2026-05-09 16:04:48,166 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:04:48,171 - INFO - logger.py:104 - info - 完成系统登录
+2026-05-09 16:04:48,176 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 16:04:48,181 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 16:04:48,184 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 16:04:51,958 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 16:04:52,701 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 16:04:58,732 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 16:04:58,735 - INFO - logger.py:104 - info - 导航进入接口方案配置页面
+2026-05-09 16:05:00,620 - INFO - logger.py:104 - info - 执行编辑后保存操作
+2026-05-09 16:05:03,216 - INFO - logger.py:104 - info - verify_interface_integration_save用例执行完成
+2026-05-09 16:05:03,222 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 16:05:03,239 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 16:05:03,311 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 16:05:03,658 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyInterfaceIntegrationSave
+2026-05-09 16:05:04,835 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 16:05:04,838 - INFO - logger.py:104 - info - 测试执行完成，耗时: 41.04秒
+2026-05-09 16:05:04,838 - INFO - logger.py:104 - info - 执行结果: 成功

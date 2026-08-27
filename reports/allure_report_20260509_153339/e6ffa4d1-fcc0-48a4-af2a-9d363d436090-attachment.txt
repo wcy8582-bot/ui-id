@@ -1,0 +1,29 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyMultiruleEnable
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_multirule_enable
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：101103
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入编码规则配置菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 等待规则列表加载
+[32mINFO    [0m playwright_ui_automation:logger.py:104 查找第一个状态为'启用'的规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 正在第 1 页查找启用规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 在第 1 页找到启用规则，业务类型：生产工单批号
+[32mINFO    [0m playwright_ui_automation:logger.py:104 查找业务类型为'生产工单批号'且状态为'停用'的规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 回到列表第一页开始查找停用规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 在第 1 页找到目标停用规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 成功定位到目标停用规则
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击目标行的'启用'按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证弹窗提示信息
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击取消按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyMultiruleEnable

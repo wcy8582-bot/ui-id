@@ -1,0 +1,38 @@
+current_version: V1
+
+# 项目定义
+projects:
+  LD: 灵动
+
+# 模块定义
+modules:
+  base_information: 基础
+  bom_management: bom管理
+  code_rule_config: 编码管理
+  customer_file: 客商档案
+  Production_management: 生产管理
+  interface_solution_configuration: 接口方案配置
+  mobile_card_configuration: 移动端卡片配置
+  printer_management: 打印机配置
+  product_file: 产品档案
+  sales_management: 销售管理
+  material_file: 物料档案
+  material_bill: 物料清单
+  production_processes: 工序
+  scenario_case: 场景用例
+  process_setup: 工序配置
+  unit_management: 单位管理
+  craft_setup: 工艺配置
+  supplier_file: 供应商档案
+  salary_setup: 工资配置
+  production_management: 生产订单
+  consumer_file: 客户档案
+  bad_set: 不良项配置
+  production_reporting: 生产报工
+  production_work_order: 生产工单
+  base_material_production: 生产基础资料
+  production_task: 生产任务
+  inventory_management: 库存管理
+  procurement_management: 采购管理
+  warehouse_management: 仓库管理
+  system_configuration: 系统配置

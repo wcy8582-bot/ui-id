@@ -1,0 +1,12 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:97 开始执行测试: TestLogin
+[32mINFO    [0m playwright_ui_automation:logger.py:97 启动浏览器: Chromium, 无头模式: False
+[31m[1mERROR   [0m playwright_ui_automation:logger.py:105 浏览器操作失败: BrowserType.launch: Executable doesn't exist at C:\Users\user\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[32mINFO    [0m playwright_ui_automation:logger.py:97 测试执行完成: TestLogin

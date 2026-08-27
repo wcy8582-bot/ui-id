@@ -1,0 +1,18 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestMaterialListModify
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：material_list_modify
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录成功，开始导航到物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证目标物料存在，打开物料详情
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始验证物料详情弹窗各项信息
+[32mINFO    [0m playwright_ui_automation:logger.py:104 所有断言验证通过，用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestMaterialListModify

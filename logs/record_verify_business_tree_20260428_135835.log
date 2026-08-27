@@ -1,0 +1,124 @@
+2026-04-28 13:58:35,101 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=Interface_solution_configuration, 用例=verify_business_tree, ms_id=0
+2026-04-28 13:58:35,106 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-28 13:58:35,107 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-28 13:59:31,710 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-28 13:59:31,710 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.locator("div").filter(has_text=re.compile(r"^系统配置$")).nth(2).click()
+    page.get_by_text("打印机管理").click()
+    page.get_by_text("接口方案配置").click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator("svg").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator("svg").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator("svg").nth(5).click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close > .anticon > svg").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close > .anticon > svg").click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.locator("svg").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame.get_by_text("公共基础").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-28 13:59:31,712 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-28 13:59:31,712 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 13:59:31,712 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-28 13:59:31,712 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 13:59:31,712 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1777355971
+2026-04-28 13:59:31,713 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-28 13:59:31,713 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-28 13:59:31,713 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-28 14:00:01,127 - INFO - logger.py:104 - info - 总token消耗: 3180
+2026-04-28 14:00:01,127 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 29.41秒
+2026-04-28 14:00:01,129 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-28 14:00:01,129 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-28 14:00:01,129 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-28 14:00:01,130 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 14:00:01,130 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-28 14:00:01,130 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 14:00:01,130 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-28 14:00:01,130 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestVerifyBusinessTree(BaseTest):
+    """
+    用例名：verify_business_tree
+    用例ms的id：0
+    """
+
+    def test_verify_business_tree(self, page: Page, project_name: str):
+        f"""验证业务树节点选择功能
+        用例名：verify_business_tree
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_business_tree")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用公用登录方法登录系统
+        self.login(page, project_name)
+        logger.info("登录成功，开始导航菜单")
+
+        # 点击打开基础资料菜单
+        logger.info("点击基础资料菜单")
+        page.get_by_text("基础资料").click()
+
+        # 点击系统配置子菜单
+        logger.info("点击系统配置菜单")
+        page.locator("div").filter(has_text=re.compile(r"^系统配置$")).nth(2).click()
+
+        # 点击打印机管理菜单
+        logger.info("点击打印机管理菜单")
+        page.get_by_text("打印机管理").click()
+
+        # 点击进入接口方案配置页面
+        logger.info("点击进入接口方案配置页面")
+        page.get_by_text("接口方案配置").click()
+
+        # 获取目标iframe内容帧
+        content_frame = page.locator("iframe[name=\"supos-tab-framework-3\"]").content_frame
+        logger.info("开始操作业务树节点")
+        # 操作业务树节点（去除录制重复的多余点击操作，保留核心操作）
+        content_frame.locator("svg").first.click()
+        content_frame.locator("svg").nth(5).click()
+        content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close > .anticon > svg").first.click()
+        content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close").first.click()
+        content_frame.locator(".ant-tree-switcher.ant-tree-switcher_close > .anticon > svg").click()
+        content_frame.locator("svg").first.click()
+
+        # 点击选择公共基础节点
+        logger.info("点击选择公共基础节点")
+        content_frame.get_by_text("公共基础").click()
+
+        logger.info("用例verify_business_tree执行完成")
+2026-04-28 14:00:01,131 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-28 14:00:01,132 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\Interface_solution_configuration\test_verify_business_tree.py

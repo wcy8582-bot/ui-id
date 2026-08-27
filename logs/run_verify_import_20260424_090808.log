@@ -1,0 +1,24 @@
+2026-04-24 09:08:08,892 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-24 09:08:08,893 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-24 09:08:08,893 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\customer_file\\test_verify_import.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260424_090808']
+2026-04-24 09:08:11,759 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyImport
+2026-04-24 09:08:11,770 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-24 09:08:14,187 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 09:08:14,192 - INFO - logger.py:104 - info - 开始执行verify_import
+2026-04-24 09:08:14,199 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-24 09:08:14,202 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 09:08:14,206 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-24 09:08:14,231 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-24 09:08:14,246 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-24 09:08:22,527 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-24 09:08:27,571 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-24 09:08:27,575 - INFO - logger.py:104 - info - 进入客户档案页面
+2026-04-24 09:08:28,732 - INFO - logger.py:104 - info - 测试文件: D:\install\auto_ui-master\src\data\LD\customer_file\客户资料_2026_04_24.xls
+2026-04-24 09:08:28,734 - INFO - logger.py:104 - info - 上传待导入的客户资料文件
+2026-04-24 09:08:59,621 - INFO - logger.py:104 - info - 关闭页面
+2026-04-24 09:08:59,637 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-24 09:08:59,684 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-24 09:08:59,977 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyImport
+2026-04-24 09:09:00,632 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-24 09:09:00,633 - INFO - logger.py:104 - info - 测试执行完成，耗时: 51.72秒
+2026-04-24 09:09:00,633 - INFO - logger.py:104 - info - 执行结果: 失败

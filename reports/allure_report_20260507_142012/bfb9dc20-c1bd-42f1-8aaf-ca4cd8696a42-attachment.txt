@@ -1,0 +1,22 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyAddChildProduct
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_add_child_product
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms ID：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 执行系统登录
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 等待BOM列表加载完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 定位并点击第一行的编辑按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 触发添加子项产品操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 保存BOM修改
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证新增子项存在
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyAddChildProduct

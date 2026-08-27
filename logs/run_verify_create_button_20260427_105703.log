@@ -1,0 +1,28 @@
+2026-04-27 10:57:03,313 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 10:57:03,314 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 10:57:03,314 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_create_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_105703']
+2026-04-27 10:57:04,903 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreateEncodingRule
+2026-04-27 10:57:04,911 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 10:57:07,481 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 10:57:07,484 - INFO - logger.py:104 - info - 开始执行用例：verify_create_button
+2026-04-27 10:57:07,495 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 10:57:07,510 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 10:57:07,515 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 10:57:07,524 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 10:57:07,528 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 10:57:11,622 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 10:57:12,199 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 10:57:18,232 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 10:57:18,236 - INFO - logger.py:104 - info - 登录成功，导航到编码规则配置页面
+2026-04-27 10:57:19,419 - INFO - logger.py:104 - info - 点击创建按钮，开始新增编码规则
+2026-04-27 10:57:20,489 - INFO - logger.py:104 - info - 填写编码规则基本信息
+2026-04-27 10:57:22,662 - INFO - logger.py:104 - info - 选择业务类型
+2026-04-27 10:57:24,504 - INFO - logger.py:104 - info - 添加编码规则段配置
+2026-04-27 10:57:35,445 - INFO - logger.py:104 - info - 保存规则并执行停用验证
+2026-04-27 10:57:48,720 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 10:57:48,730 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 10:57:48,753 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 10:57:49,047 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreateEncodingRule
+2026-04-27 10:57:49,696 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 10:57:49,697 - INFO - logger.py:104 - info - 测试执行完成，耗时: 46.35秒
+2026-04-27 10:57:49,697 - INFO - logger.py:104 - info - 执行结果: 失败

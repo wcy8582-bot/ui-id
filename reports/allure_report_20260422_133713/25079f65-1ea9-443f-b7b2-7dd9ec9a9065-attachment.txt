@@ -1,0 +1,18 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestBomImportExport
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：export_import
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 Excel文件路径: D:\install\auto_ui-master\src\data\LD\bom_management\物料清单_列表_2026_4_22.xls
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录目标系统
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入基础资料->物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 打开导入窗口，上传测试文件
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestBomImportExport

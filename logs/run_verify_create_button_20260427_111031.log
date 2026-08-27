@@ -1,0 +1,27 @@
+2026-04-27 11:10:31,271 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 11:10:31,271 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 11:10:31,271 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_create_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_111031']
+2026-04-27 11:10:32,909 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreateButton
+2026-04-27 11:10:32,917 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 11:10:35,658 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 11:10:35,666 - INFO - logger.py:104 - info - 开始执行verify_create_button
+2026-04-27 11:10:35,681 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 11:10:35,685 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 11:10:35,691 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 11:10:35,695 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 11:10:35,702 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 11:10:39,988 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 11:10:40,572 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 11:10:46,611 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 11:10:46,614 - INFO - logger.py:104 - info - 系统登录完成
+2026-04-27 11:10:46,616 - INFO - logger.py:104 - info - 进入编码规则配置页面
+2026-04-27 11:10:47,776 - INFO - logger.py:104 - info - 打开新增编码规则弹窗，填写基础信息
+2026-04-27 11:10:51,292 - INFO - logger.py:104 - info - 添加日期格式规则段
+2026-04-27 11:10:54,200 - INFO - logger.py:104 - info - 保存编码规则并执行停用操作
+2026-04-27 11:11:21,293 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 11:11:21,299 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 11:11:21,314 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 11:11:21,601 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreateButton
+2026-04-27 11:11:22,243 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 11:11:22,245 - INFO - logger.py:104 - info - 测试执行完成，耗时: 50.95秒
+2026-04-27 11:11:22,245 - INFO - logger.py:104 - info - 执行结果: 失败

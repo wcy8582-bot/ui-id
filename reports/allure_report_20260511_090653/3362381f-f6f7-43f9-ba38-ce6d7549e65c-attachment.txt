@@ -1,0 +1,24 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestModalTimeValidation
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：modal_time_validation
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：101190
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 调用公用登录方法完成登录
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入基础资料->产品档案页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击新增产品按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证新增弹窗核心元素可见性
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试标准工时手动输入
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试标准工时增加按钮功能
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试标准工时减少按钮功能
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例modal_time_validation执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestModalTimeValidation

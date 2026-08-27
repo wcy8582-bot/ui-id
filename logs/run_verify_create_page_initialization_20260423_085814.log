@@ -1,0 +1,26 @@
+2026-04-23 08:58:14,891 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-23 08:58:14,892 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-23 08:58:14,892 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_create_page_initialization.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260423_085814']
+2026-04-23 08:58:27,362 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreateBomPageInitialization
+2026-04-23 08:58:27,467 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-23 08:58:29,795 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 08:58:29,799 - INFO - logger.py:104 - info - 开始执行用例：verify_create_page_initialization
+2026-04-23 08:58:29,810 - INFO - logger.py:104 - info - 用例ms ID：0
+2026-04-23 08:58:29,813 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 08:58:29,816 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-23 08:58:29,820 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 08:58:29,841 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-23 08:58:43,460 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-23 08:58:43,462 - INFO - logger.py:104 - info - 登录成功，进入菜单导航
+2026-04-23 08:58:43,464 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-04-23 08:58:44,005 - INFO - logger.py:104 - info - 点击物料清单菜单
+2026-04-23 08:58:45,573 - INFO - logger.py:104 - info - 点击新增按钮，打开创建物料清单页面
+2026-04-23 08:58:46,474 - INFO - logger.py:104 - info - 开始验证创建页面初始化元素
+2026-04-23 08:58:46,624 - INFO - logger.py:104 - info - 所有初始化元素验证通过，用例执行完成
+2026-04-23 08:58:46,628 - INFO - logger.py:104 - info - 关闭页面
+2026-04-23 08:58:46,673 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-23 08:58:46,749 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-23 08:58:47,261 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreateBomPageInitialization
+2026-04-23 08:58:48,776 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-23 08:58:48,778 - INFO - logger.py:104 - info - 测试执行完成，耗时: 33.86秒
+2026-04-23 08:58:48,778 - INFO - logger.py:104 - info - 执行结果: 成功

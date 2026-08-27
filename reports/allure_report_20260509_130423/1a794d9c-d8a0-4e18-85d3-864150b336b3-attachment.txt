@@ -1,0 +1,21 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestImportEmpty
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：import_empty
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms ID：101271
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试文件: D:\install\auto_ui-master\src\data\LD\customer_file\空表.xlsx
+[32mINFO    [0m playwright_ui_automation:logger.py:104 调用公用登录方法登录系统
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入客户档案页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 定位客户资料页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击第一个客户数据行，激活客户产品映射页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestImportEmpty

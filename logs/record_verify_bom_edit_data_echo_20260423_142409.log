@@ -1,0 +1,106 @@
+2026-04-23 14:24:09,515 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=verify_bom_edit_data_echo, ms_id=0
+2026-04-23 14:24:09,519 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 14:24:09,519 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 14:25:08,244 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 14:25:08,244 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("row", name="2 CP2026042000034 半成品2").locator("a").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^父项产品信息$"))).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="查看物料清单").locator("form")).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^子项产品信息$"))).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("添加子项产品序号物料编号物料名称物料规格单位用量关联工序单位物料来源库存数量备注操作 1CP2026042000037物料21半成品2工序1千克外采0删除")).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("添加子项产品序号物料编号物料名称物料规格单位用量关联工序单位物料来源库存数量备注操作 1CP2026042000037物料21半成品2工序1千克外采0删除")).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 14:25:08,246 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 14:25:08,246 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:25:08,246 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 14:25:08,247 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:25:08,247 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776925508
+2026-04-23 14:25:08,247 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 14:25:08,247 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 14:25:08,248 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 14:25:43,893 - INFO - logger.py:104 - info - 总token消耗: 3028
+2026-04-23 14:25:43,894 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 35.64秒
+2026-04-23 14:25:43,895 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 14:25:43,895 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 14:25:43,895 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 14:25:43,895 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:25:43,895 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 14:25:43,896 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:25:43,896 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 14:25:43,896 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestVerifyBomEditDataEcho(BaseTest):
+    """
+    用例名：verify_bom_edit_data_echo
+    用例ms的id：0
+    """
+
+    def test_verify_bom_edit_data_echo(self, page: Page, project_name: str):
+        f"""验证物料清单查看详情数据回显
+        用例名：verify_bom_edit_data_echo
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例: verify_bom_edit_data_echo")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 调用公用登录方法
+        self.login(page, project_name)
+        
+        # 进入物料清单菜单
+        logger.info("点击基础资料菜单")
+        page.get_by_text("基础资料").click()
+        logger.info("点击物料清单子菜单")
+        page.get_by_text("物料清单").click()
+        
+        # 获取BOM页面iframe上下文
+        bom_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        # 点击目标BOM条目打开详情弹窗
+        logger.info("打开目标物料清单详情")
+        bom_frame.get_by_role("row", name="2 CP2026042000034 半成品2").locator("a").click()
+        
+        # 验证详情弹窗各模块数据显示正确
+        logger.info("验证详情弹窗各信息可见")
+        expect(bom_frame.locator("div").filter(has_text=re.compile(r"^父项产品信息$"))).to_be_visible()
+        expect(bom_frame.get_by_role("dialog", name="查看物料清单").locator("form")).to_be_visible()
+        expect(bom_frame.locator("div").filter(has_text=re.compile(r"^子项产品信息$"))).to_be_visible()
+        expect(bom_frame.get_by_text("添加子项产品序号物料编号物料名称物料规格单位用量关联工序单位物料来源库存数量备注操作 1CP2026042000037物料21半成品2工序1千克外采0删除")).to_be_visible()
+        
+        logger.info(f"用例verify_bom_edit_data_echo执行完成")
+2026-04-23 14:25:43,897 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 14:25:43,898 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_verify_bom_edit_data_echo.py

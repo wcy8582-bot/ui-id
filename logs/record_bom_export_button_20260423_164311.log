@@ -1,0 +1,117 @@
+2026-04-23 16:43:11,654 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=bom_export_button, ms_id=0
+2026-04-23 16:43:11,657 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 16:43:11,657 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 16:44:22,304 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 16:44:22,305 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="export 导出").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("radio", name="选中页面范围").check()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("spinbutton").nth(1).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("spinbutton").nth(1).fill("3")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="文件名：导出数据范围：选中页面范围全部数据 — （请输入页码范围（例如：1-3））").nth(5).click()
+    with page.expect_download() as download_info:
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="导 出").click()
+    download = download_info.value
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("导出成功").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 16:44:22,306 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 16:44:22,307 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:44:22,307 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 16:44:22,307 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:44:22,307 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776933862
+2026-04-23 16:44:22,307 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 16:44:22,308 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 16:44:22,308 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 16:45:16,109 - INFO - logger.py:104 - info - 总token消耗: 3165
+2026-04-23 16:45:16,109 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 53.80秒
+2026-04-23 16:45:16,110 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:45:16,111 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 16:45:16,112 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Playwright, sync_playwright, expect, Page
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestBomExportButton(BaseTest):
+    """
+    用例名：bom_export_button
+    用例ms的id：0
+    """
+
+    def test_bom_export_button(self, page: Page, project_name: str):
+        f"""测试BOM导出功能
+        用例名：bom_export_button
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：bom_export_button")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用公用登录方法登录系统
+        logger.info("登录系统")
+        self.login(page, project_name)
+        
+        # 导航进入物料清单页面
+        logger.info("进入物料清单页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("物料清单").click()
+
+        # 获取目标iframe内容上下文
+        export_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        logger.info("开始执行导出配置操作")
+        # 点击打开导出弹窗
+        export_frame.get_by_role("button", name="export 导出").click()
+        # 选择导出范围为选中页面
+        export_frame.get_by_role("radio", name="选中页面范围").check()
+        # 设置导出结束页码
+        export_frame.get_by_role("spinbutton").nth(1).click()
+        export_frame.get_by_role("spinbutton").nth(1).fill("3")
+        export_frame.locator("div").filter(has_text="文件名：导出数据范围：选中页面范围全部数据 — （请输入页码范围（例如：1-3））").nth(5).click()
+        
+        # 触发导出下载
+        logger.info("触发导出，等待下载完成")
+        with page.expect_download() as download_info:
+            export_frame.get_by_role("button", name="导 出").click()
+        download = download_info.value
+        logger.info(f"导出文件下载完成，文件名：{download.suggested_filename}")
+        
+        # 确认导出成功提示
+        export_frame.get_by_text("导出成功").click()
+        logger.info("bom_export_button用例执行完成")
+2026-04-23 16:45:16,113 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 16:45:16,114 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_bom_export_button.py

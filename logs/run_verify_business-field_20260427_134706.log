@@ -1,0 +1,26 @@
+2026-04-27 13:47:06,170 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 13:47:06,170 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 13:47:06,171 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_business-field.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_134706']
+2026-04-27 13:47:08,818 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyBusinessField
+2026-04-27 13:47:08,866 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 13:47:11,579 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 13:47:11,583 - INFO - logger.py:104 - info - 开始执行verify_business-field
+2026-04-27 13:47:11,588 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 13:47:11,595 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 13:47:11,600 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 13:47:11,607 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 13:47:11,611 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 13:47:15,492 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 13:47:16,093 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 13:47:22,210 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 13:47:22,213 - INFO - logger.py:104 - info - 导航到编码规则配置页面
+2026-04-27 13:47:23,385 - INFO - logger.py:104 - info - 开始执行新增编码规则操作
+2026-04-27 13:47:26,394 - INFO - logger.py:104 - info - 点击取消，结束测试流程
+2026-04-27 13:47:26,966 - INFO - logger.py:104 - info - 用例verify_business-field执行完成
+2026-04-27 13:47:26,971 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 13:47:26,986 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 13:47:27,045 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 13:47:27,394 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyBusinessField
+2026-04-27 13:47:28,316 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 13:47:28,317 - INFO - logger.py:104 - info - 测试执行完成，耗时: 22.12秒
+2026-04-27 13:47:28,318 - INFO - logger.py:104 - info - 执行结果: 成功

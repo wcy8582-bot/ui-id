@@ -1,0 +1,25 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyRequireField
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_require_field
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录成功，开始导航到目标页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击基础资料菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击系统配置菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击进入标签打印配置页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击新增按钮打开新增表单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 不填写任何内容，直接点击保存按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 校验必填项提示信息是否正常显示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击取消关闭新增表单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyRequireField

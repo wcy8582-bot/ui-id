@@ -1,0 +1,109 @@
+2026-04-24 14:01:35,692 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=customer_file, 用例=import_product_code_exists, ms_id=0
+2026-04-24 14:01:35,696 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-24 14:01:35,696 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-24 14:03:00,400 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-24 14:03:00,400 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("客户档案").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="KS202604230023").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="KS202604230021").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="right").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="left").first.click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="KS202604230023").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="import 导入").nth(1).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="Close").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-24 14:03:00,402 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-24 14:03:00,402 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 14:03:00,402 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-24 14:03:00,402 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 14:03:00,403 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1777010580
+2026-04-24 14:03:00,403 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-24 14:03:00,403 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-24 14:03:00,403 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-24 14:03:36,122 - INFO - logger.py:104 - info - 总token消耗: 2956
+2026-04-24 14:03:36,122 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 35.72秒
+2026-04-24 14:03:36,125 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-24 14:03:36,125 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-24 14:03:36,125 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-24 14:03:36,126 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 14:03:36,126 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-24 14:03:36,126 - INFO - logger.py:104 - info - ============================================================
+2026-04-24 14:03:36,127 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-24 14:03:36,127 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestImportProductCodeExists(BaseTest):
+    """
+    用例名：import_product_code_exists
+    用例ms的id：0
+    """
+
+    def test_import_product_code_exists(self, page: Page, project_name: str):
+        f"""测试导入客户档案功能
+        用例名：import_product_code_exists
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：import_product_code_exists")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用公用登录方法
+        logger.info("完成系统登录")
+        self.login(page, project_name)
+
+        # 登录后确认弹窗
+        logger.info("点击登录后确定按钮")
+        page.get_by_role("button", name="确定").click()
+
+        # 进入客户档案页面
+        logger.info("进入客户档案页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("客户档案").click()
+
+        # 执行客户选择、分页操作、触发导入
+        logger.info("执行页面操作，触发导入")
+        iframe = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        iframe.get_by_role("cell", name="KS202604230023").click()
+        iframe.get_by_role("cell", name="KS202604230021").click()
+        iframe.get_by_role("button", name="right").first.click()
+        iframe.get_by_role("button", name="left").first.click()
+        iframe.get_by_role("cell", name="KS202604230023").click()
+        iframe.get_by_role("button", name="import 导入").nth(1).click()
+        iframe.get_by_role("button", name="Close").click()
+
+        logger.info("用例import_product_code_exists执行完成")
+2026-04-24 14:03:36,140 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-24 14:03:36,142 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\customer_file\test_import_product_code_exists.py

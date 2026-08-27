@@ -1,0 +1,27 @@
+2026-05-08 11:09:02,359 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-08 11:09:02,360 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-08 11:09:02,360 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\system_configuration\\test_verify_edit_function.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260508_110902']
+2026-05-08 11:09:04,219 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyEditFunction
+2026-05-08 11:09:04,228 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-08 11:09:07,084 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 11:09:07,088 - INFO - logger.py:104 - info - 开始执行用例：verify_edit_function
+2026-05-08 11:09:07,091 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-08 11:09:07,102 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 11:09:07,105 - INFO - logger.py:104 - info - 执行系统登录
+2026-05-08 11:09:07,117 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-08 11:09:07,147 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-08 11:09:07,151 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-08 11:09:11,026 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-08 11:09:11,573 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-08 11:09:17,588 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-08 11:09:17,591 - INFO - logger.py:104 - info - 导航进入标签打印配置页面
+2026-05-08 11:09:19,386 - INFO - logger.py:104 - info - 打开目标条目编辑
+2026-05-08 11:09:20,414 - INFO - logger.py:104 - info - 修改模板ID并保存
+2026-05-08 11:09:21,539 - INFO - logger.py:104 - info - verify_edit_function用例执行完成
+2026-05-08 11:09:21,543 - INFO - logger.py:104 - info - 关闭页面
+2026-05-08 11:09:21,561 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-08 11:09:21,603 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-08 11:09:22,011 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyEditFunction
+2026-05-08 11:09:22,787 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-08 11:09:22,788 - INFO - logger.py:104 - info - 测试执行完成，耗时: 20.40秒
+2026-05-08 11:09:22,788 - INFO - logger.py:104 - info - 执行结果: 成功

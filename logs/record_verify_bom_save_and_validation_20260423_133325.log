@@ -1,0 +1,125 @@
+2026-04-23 13:33:25,770 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=verify_bom_save_and_validation, ms_id=0
+2026-04-23 13:33:25,773 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 13:33:25,774 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 13:35:06,947 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 13:35:06,947 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 新增").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("label").filter(has_text=re.compile(r"^父项产品$")).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^请选择产品$")).nth(4).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#combineValue_help").get_by_text("请选择产品").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text=re.compile(r"^父项产品请选择产品请选择产品$")).first).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_3").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_3").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_3").fill("FJ")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_3").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_3").fill("FJ00001")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("FJ00001 | 博士伦-不锈钢-金属镜架-枪色").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("添加子项产品序号物料编号物料名称物料规格单位用量关联工序单位物料来源库存数量备注操作 1PJ00184镜腿套-海伦凯勒中号工序C副委外0删除 To pick")).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 13:35:07,041 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 13:35:07,041 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 13:35:07,042 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 13:35:07,042 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 13:35:07,042 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776922507
+2026-04-23 13:35:07,042 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 13:35:07,043 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 13:35:07,043 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 13:36:02,175 - INFO - logger.py:104 - info - 总token消耗: 4364
+2026-04-23 13:36:02,175 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 55.13秒
+2026-04-23 13:36:02,176 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 13:36:02,177 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 13:36:02,177 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 13:36:02,177 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 13:36:02,177 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 13:36:02,177 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 13:36:02,178 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 13:36:02,178 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestVerifyBomSaveAndValidation(BaseTest):
+    """
+    用例名：verify_bom_save_and_validation
+    用例ms的id：0
+    """
+
+    def test_verify_bom_save_and_validation(self, page: Page, project_name: str):
+        f"""测试BOM保存校验功能
+        用例名：verify_bom_save_and_validation
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_bom_save_and_validation")
+        logger.info(f"用例ms ID：0")
+        logger.info("=" * 60)
+        
+        # 调用封装好的公用登录方法
+        logger.info("登录目标系统")
+        self.login(page, project_name)
+
+        # 进入物料清单模块
+        logger.info("导航进入物料清单页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("物料清单").click()
+
+        # 获取页面iframe内容帧
+        bom_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+
+        # 点击新增BOM
+        logger.info("点击新增BOM按钮")
+        bom_frame.get_by_role("button", name="plus-circle 新增").click()
+
+        # 触发空父项保存校验
+        logger.info("触发空父项产品保存校验")
+        bom_frame.locator("label").filter(has_text=re.compile(r"^父项产品$")).click()
+        bom_frame.locator("div").filter(has_text=re.compile(r"^请选择产品$")).nth(4).click()
+        bom_frame.get_by_role("button", name="保 存").click()
+        bom_frame.locator("#combineValue_help").get_by_text("请选择产品").click()
+        expect(bom_frame.locator("div").filter(has_text=re.compile(r"^父项产品请选择产品请选择产品$")).first).to_be_visible()
+
+        # 选择父项产品
+        logger.info("输入并选择目标父项产品")
+        bom_frame.locator("#rc_select_3").click()
+        # 去除录制产生的多余重复按键操作，直接输入目标产品编号
+        bom_frame.locator("#rc_select_3").fill("FJ00001")
+        bom_frame.get_by_text("FJ00001 | 博士伦-不锈钢-金属镜架-枪色").click()
+
+        # 断言结果
+        logger.info("断言子项产品加载成功")
+        expect(bom_frame.get_by_text("添加子项产品序号物料编号物料名称物料规格单位用量关联工序单位物料来源库存数量备注操作 1PJ00184镜腿套-海伦凯勒中号工序C副委外0删除 To pick")).to_be_visible()
+
+        logger.info("用例verify_bom_save_and_validation执行完成")
+2026-04-23 13:36:02,179 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 13:36:02,181 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_verify_bom_save_and_validation.py

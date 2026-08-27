@@ -1,0 +1,30 @@
+2026-05-09 15:14:00,289 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 15:14:00,289 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 15:14:00,290 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_purchase_inbound_initialization.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_151400']
+2026-05-09 15:14:02,273 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCodingRuleConfig
+2026-05-09 15:14:02,280 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 15:14:05,765 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 15:14:05,768 - INFO - logger.py:104 - info - 开始执行verify_purchase_inbound_initialization
+2026-05-09 15:14:05,771 - INFO - logger.py:104 - info - 用例ms的id：101094
+2026-05-09 15:14:05,778 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 15:14:05,781 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 15:14:05,785 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 15:14:05,787 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 15:14:09,544 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 15:14:10,114 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 15:14:16,148 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 15:14:16,152 - INFO - logger.py:104 - info - 导航进入编码规则配置页面
+2026-05-09 15:14:17,389 - INFO - logger.py:104 - info - 等待规则列表加载
+2026-05-09 15:14:18,400 - INFO - logger.py:104 - info - 正在第 1 页查找业务类型为'采购入库批号'的规则
+2026-05-09 15:14:18,421 - INFO - logger.py:104 - info - 在第 1 页找到目标数据
+2026-05-09 15:14:18,438 - INFO - logger.py:104 - info - 成功定位到第一个业务类型为'采购入库批号'的规则
+2026-05-09 15:14:18,440 - INFO - logger.py:104 - info - 点击目标行的'查看'按钮
+2026-05-09 15:14:19,069 - INFO - logger.py:104 - info - 完成查看，点击返回
+2026-05-09 15:14:19,643 - INFO - logger.py:104 - info - verify_purchase_inbound_initialization 用例执行完成
+2026-05-09 15:14:19,649 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 15:14:19,749 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 15:14:19,800 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 15:14:20,364 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCodingRuleConfig
+2026-05-09 15:14:21,551 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 15:14:21,553 - INFO - logger.py:104 - info - 测试执行完成，耗时: 21.23秒
+2026-05-09 15:14:21,554 - INFO - logger.py:104 - info - 执行结果: 成功

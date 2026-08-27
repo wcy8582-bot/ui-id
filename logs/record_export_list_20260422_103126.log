@@ -1,0 +1,118 @@
+2026-04-22 10:31:26,307 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=export_list, ms_id=0
+2026-04-22 10:31:26,310 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-22 10:31:26,310 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-22 10:32:34,585 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-22 10:32:34,630 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#root")).to_contain_text("导出")
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="export 导出")).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="export 导出").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("导出").get_by_text("导出", exact=True)).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("文件名：导出数据范围：选中页面范围全部数据 — （请输入页码范围（例如：1-3））")).to_be_visible()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="导 出")).to_be_visible()
+    with page.expect_download() as download_info:
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="导 出").click()
+    download = download_info.value
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="导出成功").nth(3)).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-22 10:32:34,642 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-22 10:32:34,643 - INFO - logger.py:104 - info - ============================================================
+2026-04-22 10:32:34,643 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-22 10:32:34,643 - INFO - logger.py:104 - info - ============================================================
+2026-04-22 10:32:34,644 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776825154
+2026-04-22 10:32:34,644 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-22 10:32:34,807 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-22 10:32:34,807 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-22 10:33:34,951 - INFO - logger.py:104 - info - 总token消耗: 3526
+2026-04-22 10:33:34,951 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 60.14秒
+2026-04-22 10:33:34,953 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-22 10:33:34,953 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-22 10:33:34,953 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-22 10:33:34,953 - INFO - logger.py:104 - info - ============================================================
+2026-04-22 10:33:34,954 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-22 10:33:34,954 - INFO - logger.py:104 - info - ============================================================
+2026-04-22 10:33:34,954 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-22 10:33:34,954 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestExportList(BaseTest):
+    """
+    用例名：export_list
+    用例ms的id：0
+    """
+
+    def test_export_list(self, page: Page, project_name: str):
+        f"""测试物料清单导出功能
+        用例名：export_list
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：export_list")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法登录系统
+        self.login(page, project_name)
+        
+        # 进入物料清单菜单
+        logger.info("进入物料清单页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("物料清单").click()
+
+        # 验证导出元素存在
+        expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#root")).to_contain_text("导出")
+        export_btn = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="export 导出")
+        expect(export_btn).to_be_visible()
+        
+        # 打开导出弹窗
+        logger.info("点击导出按钮打开导出配置弹窗")
+        export_btn.click()
+
+        # 验证导出弹窗信息正确
+        expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("导出").get_by_text("导出", exact=True)).to_be_visible()
+        expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("文件名：导出数据范围：选中页面范围全部数据 — （请输入页码范围（例如：1-3））")).to_be_visible()
+        confirm_export_btn = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="导 出")
+        expect(confirm_export_btn).to_be_visible()
+
+        # 执行导出下载，验证导出成功
+        logger.info("点击确认导出，触发文件下载")
+        with page.expect_download() as download_info:
+            confirm_export_btn.click()
+        download = download_info.value
+        expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="导出成功").nth(3)).to_be_visible()
+        
+        logger.info("用例执行完成，物料清单导出成功")
+2026-04-22 10:33:34,955 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-22 10:33:34,956 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_export_list.py

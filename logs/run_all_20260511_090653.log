@@ -1,0 +1,184 @@
+2026-05-11 09:06:53,853 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-11 09:06:53,854 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-11 09:06:53,854 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\product_file', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260511_090653']
+2026-05-11 09:06:56,385 - INFO - logger.py:104 - info - 开始执行测试: TestBatchCreateProduct
+2026-05-11 09:06:56,393 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:07:00,021 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:00,096 - INFO - logger.py:104 - info - 开始执行test_batch_create
+2026-05-11 09:07:00,100 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-11 09:07:00,103 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:00,108 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:07:00,111 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:07:00,114 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:07:04,423 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:07:04,985 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:07:11,013 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:07:11,016 - INFO - logger.py:104 - info - 进入基础资料-产品档案模块
+2026-05-11 09:07:12,229 - INFO - logger.py:104 - info - 点击批量创建按钮
+2026-05-11 09:07:13,273 - INFO - logger.py:104 - info - 断言批量创建表单区域可见
+2026-05-11 09:07:13,289 - INFO - logger.py:104 - info - batch_create执行完成
+2026-05-11 09:07:13,293 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:07:13,310 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:07:13,353 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:07:13,691 - INFO - logger.py:104 - info - 测试执行完成: TestBatchCreateProduct
+2026-05-11 09:07:13,726 - INFO - logger.py:104 - info - 开始执行测试: TestCopyProduct
+2026-05-11 09:07:13,731 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:07:17,544 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:17,548 - INFO - logger.py:104 - info - 开始执行用例：copy
+2026-05-11 09:07:17,551 - INFO - logger.py:104 - info - 用例ms的id：100947
+2026-05-11 09:07:17,554 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:17,557 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:07:17,561 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:07:17,582 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:07:21,688 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:07:22,251 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:07:28,284 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:07:28,288 - INFO - logger.py:104 - info - 进入产品档案页面
+2026-05-11 09:07:29,503 - INFO - logger.py:104 - info - 验证操作列和复制按钮可用性
+2026-05-11 09:07:30,499 - INFO - logger.py:104 - info - 点击第一个产品的复制按钮
+2026-05-11 09:07:31,051 - INFO - logger.py:104 - info - 点击保存复制的产品信息
+2026-05-11 09:07:31,726 - INFO - logger.py:104 - info - 用例copy执行完成
+2026-05-11 09:07:31,732 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:07:31,767 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:07:31,835 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:07:32,202 - INFO - logger.py:104 - info - 测试执行完成: TestCopyProduct
+2026-05-11 09:07:32,267 - INFO - logger.py:104 - info - 开始执行测试: TestCreateButton
+2026-05-11 09:07:32,273 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:07:36,243 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:36,247 - INFO - logger.py:104 - info - 开始执行用例：test_create_button
+2026-05-11 09:07:36,249 - INFO - logger.py:104 - info - 用例ms的id：101190
+2026-05-11 09:07:36,252 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:36,327 - INFO - logger.py:104 - info - 完成系统登录
+2026-05-11 09:07:36,330 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:07:36,333 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:07:36,343 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:07:40,281 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:07:40,843 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:07:46,862 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:07:46,864 - INFO - logger.py:104 - info - 进入产品档案模块
+2026-05-11 09:07:47,991 - INFO - logger.py:104 - info - 点击新增按钮打开创建产品弹窗
+2026-05-11 09:07:49,284 - INFO - logger.py:104 - info - 验证创建弹窗包含产品图片字段
+2026-05-11 09:07:49,304 - INFO - logger.py:104 - info - 关闭创建产品弹窗
+2026-05-11 09:07:49,956 - INFO - logger.py:104 - info - create_button用例执行完成
+2026-05-11 09:07:49,960 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:07:49,976 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:07:50,032 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:07:50,377 - INFO - logger.py:104 - info - 测试执行完成: TestCreateButton
+2026-05-11 09:07:50,399 - INFO - logger.py:104 - info - 开始执行测试: TestFunOptimized
+2026-05-11 09:07:50,401 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:07:54,270 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:54,274 - INFO - logger.py:104 - info - 开始执行用例：fun_optimized
+2026-05-11 09:07:54,277 - INFO - logger.py:104 - info - 用例ms的id：100946
+2026-05-11 09:07:54,280 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:07:54,284 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:07:54,286 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:07:54,289 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:07:58,318 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:07:58,874 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:08:04,892 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:08:04,895 - INFO - logger.py:104 - info - 登录成功，开始菜单导航
+2026-05-11 09:08:04,897 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-05-11 09:08:05,442 - INFO - logger.py:104 - info - 进入产品档案页面
+2026-05-11 09:08:06,013 - INFO - logger.py:104 - info - 点击新增产品按钮
+2026-05-11 09:08:07,200 - INFO - logger.py:104 - info - 操作勾选启用质检控制
+2026-05-11 09:08:07,761 - INFO - logger.py:104 - info - 操作勾选启用质检控制-是
+2026-05-11 09:08:08,342 - INFO - logger.py:104 - info - 用例fun_optimized执行完成
+2026-05-11 09:08:08,346 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:08:08,363 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:08:08,416 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:08:08,858 - INFO - logger.py:104 - info - 测试执行完成: TestFunOptimized
+2026-05-11 09:08:08,898 - INFO - logger.py:104 - info - 开始执行测试: TestModalTimeValidation
+2026-05-11 09:08:08,901 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:08:12,461 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:08:12,465 - INFO - logger.py:104 - info - 开始执行用例：modal_time_validation
+2026-05-11 09:08:12,468 - INFO - logger.py:104 - info - 用例ms的id：101190
+2026-05-11 09:08:12,471 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:08:12,474 - INFO - logger.py:104 - info - 调用公用登录方法完成登录
+2026-05-11 09:08:12,486 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:08:12,491 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:08:12,512 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:08:16,418 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:08:16,985 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:08:23,023 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:08:23,026 - INFO - logger.py:104 - info - 进入基础资料->产品档案页面
+2026-05-11 09:08:24,259 - INFO - logger.py:104 - info - 点击新增产品按钮
+2026-05-11 09:08:25,554 - INFO - logger.py:104 - info - 验证新增弹窗核心元素可见性
+2026-05-11 09:08:25,592 - INFO - logger.py:104 - info - 测试标准工时手动输入
+2026-05-11 09:08:26,715 - INFO - logger.py:104 - info - 测试标准工时增加按钮功能
+2026-05-11 09:08:27,884 - INFO - logger.py:104 - info - 测试标准工时减少按钮功能
+2026-05-11 09:08:29,051 - INFO - logger.py:104 - info - 用例modal_time_validation执行完成
+2026-05-11 09:08:29,057 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:08:29,079 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:08:29,143 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:08:29,509 - INFO - logger.py:104 - info - 测试执行完成: TestModalTimeValidation
+2026-05-11 09:08:29,533 - INFO - logger.py:104 - info - 开始执行测试: TestProductPicture
+2026-05-11 09:08:29,537 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:08:33,582 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:08:33,586 - INFO - logger.py:104 - info - 开始执行用例：product_picture
+2026-05-11 09:08:33,589 - INFO - logger.py:104 - info - 用例ms的id：101210
+2026-05-11 09:08:33,592 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:08:33,594 - INFO - logger.py:104 - info - 登录系统
+2026-05-11 09:08:33,596 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:08:33,599 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:08:33,602 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:08:37,628 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:08:38,205 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:08:44,226 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:08:44,230 - INFO - logger.py:104 - info - 进入产品档案页面
+2026-05-11 09:08:45,431 - INFO - logger.py:104 - info - 点击新增产品按钮
+2026-05-11 09:08:46,732 - INFO - logger.py:104 - info - 进入产品图片上传环节
+2026-05-11 09:08:47,304 - INFO - logger.py:104 - info - 上传测试图片文件: D:\install\auto_ui-master\src\pages\LD\product_file\1.png
+2026-05-11 09:08:47,838 - INFO - logger.py:104 - info - 等待图片上传处理完成
+2026-05-11 09:08:49,849 - INFO - logger.py:104 - info - 点击预览图片
+2026-05-11 09:08:50,537 - INFO - logger.py:104 - info - 关闭预览弹窗
+2026-05-11 09:09:21,477 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:09:21,517 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:09:21,549 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:09:21,902 - INFO - logger.py:104 - info - 测试执行完成: TestProductPicture
+2026-05-11 09:09:21,926 - INFO - logger.py:104 - info - 开始执行测试: TestStandardTime
+2026-05-11 09:09:21,930 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:09:25,399 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:09:25,403 - INFO - logger.py:104 - info - 开始执行用例：standard_time
+2026-05-11 09:09:25,406 - INFO - logger.py:104 - info - 用例ms的id：101193
+2026-05-11 09:09:25,410 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:09:25,413 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:09:25,417 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:09:25,419 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:09:29,489 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:09:30,067 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:09:36,084 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:09:36,087 - INFO - logger.py:104 - info - 系统登录完成
+2026-05-11 09:09:36,088 - INFO - logger.py:104 - info - 进入产品档案页面
+2026-05-11 09:09:38,611 - INFO - logger.py:104 - info - 点击新增产品按钮
+2026-05-11 09:09:39,176 - INFO - logger.py:104 - info - 点击标准工时选项，开始验证展示效果
+2026-05-11 09:09:39,205 - INFO - logger.py:104 - info - 所有断言通过，标准工时展示正常
+2026-05-11 09:09:39,211 - INFO - logger.py:104 - info - 用例standard_time执行完成
+2026-05-11 09:09:39,216 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:09:39,234 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:09:39,280 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:09:39,642 - INFO - logger.py:104 - info - 测试执行完成: TestStandardTime
+2026-05-11 09:09:39,675 - INFO - logger.py:104 - info - 开始执行测试: TestViewTableBody
+2026-05-11 09:09:39,679 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:09:43,352 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:09:43,355 - INFO - logger.py:104 - info - 开始执行用例：view_table_body
+2026-05-11 09:09:43,358 - INFO - logger.py:104 - info - 用例ms的id：101210
+2026-05-11 09:09:43,362 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:09:43,367 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:09:43,370 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:09:43,375 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:09:47,245 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:09:47,861 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:09:53,885 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:09:53,887 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-05-11 09:09:54,435 - INFO - logger.py:104 - info - 点击产品档案菜单
+2026-05-11 09:09:55,093 - INFO - logger.py:104 - info - 验证表格表头包含所有预期字段
+2026-05-11 09:09:55,599 - INFO - logger.py:104 - info - 验证第一行操作按钮可见性
+2026-05-11 09:09:55,638 - INFO - logger.py:104 - info - 验证右上角退出按钮可见性
+2026-05-11 09:09:55,647 - INFO - logger.py:104 - info - 用例view_table_body执行完成
+2026-05-11 09:09:55,651 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:09:55,669 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:09:55,723 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:09:56,112 - INFO - logger.py:104 - info - 测试执行完成: TestViewTableBody
+2026-05-11 09:09:57,338 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-11 09:09:57,343 - INFO - logger.py:104 - info - 测试执行完成，耗时: 183.44秒
+2026-05-11 09:09:57,347 - INFO - logger.py:104 - info - 执行结果: 失败

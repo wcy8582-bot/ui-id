@@ -1,0 +1,31 @@
+2026-05-09 14:39:40,102 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 14:39:40,103 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 14:39:40,103 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_complement_symbol.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_143940']
+2026-05-09 14:39:42,217 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyComplementSymbol
+2026-05-09 14:39:42,302 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 14:39:46,371 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:39:46,374 - INFO - logger.py:104 - info - 开始执行用例：verify_complement_symbol
+2026-05-09 14:39:46,383 - INFO - logger.py:104 - info - 用例ms的id：101074
+2026-05-09 14:39:46,390 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:39:46,402 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 14:39:46,407 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 14:39:46,413 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 14:39:50,282 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 14:39:50,838 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 14:39:56,879 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 14:39:56,882 - INFO - logger.py:104 - info - 进入编码规则配置菜单
+2026-05-09 14:39:58,099 - INFO - logger.py:104 - info - 开始创建新编码规则
+2026-05-09 14:40:01,229 - INFO - logger.py:104 - info - 配置流水号左补位参数
+2026-05-09 14:40:03,911 - INFO - logger.py:104 - info - 开始输入1
+2026-05-09 14:40:05,124 - INFO - logger.py:104 - info - 输入1完成，开始清空
+2026-05-09 14:40:05,676 - INFO - logger.py:104 - info - 清空完成，开始输入q
+2026-05-09 14:40:06,838 - INFO - logger.py:104 - info - 输入q完成
+2026-05-09 14:40:06,840 - INFO - logger.py:104 - info - 完成操作，点击取消
+2026-05-09 14:40:07,426 - INFO - logger.py:104 - info - 用例verify_complement_symbol执行完毕
+2026-05-09 14:40:07,431 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 14:40:07,464 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 14:40:07,510 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 14:40:07,909 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyComplementSymbol
+2026-05-09 14:40:08,793 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 14:40:08,795 - INFO - logger.py:104 - info - 测试执行完成，耗时: 28.66秒
+2026-05-09 14:40:08,795 - INFO - logger.py:104 - info - 执行结果: 成功

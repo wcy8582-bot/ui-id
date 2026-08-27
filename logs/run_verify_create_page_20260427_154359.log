@@ -1,0 +1,25 @@
+2026-04-27 15:43:59,961 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 15:43:59,962 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 15:43:59,963 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\supplier_file\\test_verify_create_page.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_154359']
+2026-04-27 15:44:01,670 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreatePage
+2026-04-27 15:44:01,679 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 15:44:04,387 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 15:44:04,391 - INFO - logger.py:104 - info - 开始执行verify_create_page
+2026-04-27 15:44:04,403 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 15:44:04,407 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 15:44:04,411 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 15:44:04,421 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 15:44:04,428 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 15:44:08,616 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 15:44:09,175 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 15:44:15,200 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 15:44:15,203 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-04-27 15:44:15,746 - INFO - logger.py:104 - info - 点击供应商档案菜单
+2026-04-27 15:44:16,379 - INFO - logger.py:104 - info - 点击新增按钮
+2026-04-27 15:44:17,589 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 15:44:17,609 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 15:44:17,684 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 15:44:18,005 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreatePage
+2026-04-27 15:44:18,926 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 15:44:18,927 - INFO - logger.py:104 - info - 测试执行完成，耗时: 18.94秒
+2026-04-27 15:44:18,927 - INFO - logger.py:104 - info - 执行结果: 成功

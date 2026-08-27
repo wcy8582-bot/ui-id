@@ -1,0 +1,29 @@
+2026-04-28 14:04:44,516 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-28 14:04:44,517 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-28 14:04:44,517 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\interface_solution_configuration\\test_verify_business_tree.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260428_140444']
+2026-04-28 14:04:46,745 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyBusinessTree
+2026-04-28 14:04:46,798 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-28 14:04:49,880 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 14:04:49,884 - INFO - logger.py:104 - info - 开始执行用例：verify_business_tree
+2026-04-28 14:04:49,887 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-28 14:04:49,891 - INFO - logger.py:104 - info - ============================================================
+2026-04-28 14:04:49,894 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-28 14:04:49,899 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-28 14:04:49,914 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-28 14:04:54,093 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-28 14:04:54,686 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-28 14:05:00,723 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-28 14:05:00,727 - INFO - logger.py:104 - info - 登录成功，开始导航菜单
+2026-04-28 14:05:00,729 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-04-28 14:05:01,297 - INFO - logger.py:104 - info - 点击系统配置菜单
+2026-04-28 14:05:01,921 - INFO - logger.py:104 - info - 点击打印机管理菜单
+2026-04-28 14:05:02,490 - INFO - logger.py:104 - info - 点击进入接口方案配置页面
+2026-04-28 14:05:03,256 - INFO - logger.py:104 - info - 开始操作业务树节点
+2026-04-28 14:05:06,589 - INFO - logger.py:104 - info - 用例verify_business_tree执行完成
+2026-04-28 14:05:06,595 - INFO - logger.py:104 - info - 关闭页面
+2026-04-28 14:05:06,616 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-28 14:05:06,699 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-28 14:05:07,034 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyBusinessTree
+2026-04-28 14:05:08,022 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-28 14:05:08,025 - INFO - logger.py:104 - info - 测试执行完成，耗时: 23.47秒
+2026-04-28 14:05:08,025 - INFO - logger.py:104 - info - 执行结果: 成功

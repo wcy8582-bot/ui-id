@@ -1,0 +1,22 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyRemarkLengthValidation
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_remark_length_validation
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms ID：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 执行系统登录
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 导航到物料清单模块
+[32mINFO    [0m playwright_ui_automation:logger.py:104 定位物料清单列表iframe成功
+[32mINFO    [0m playwright_ui_automation:logger.py:104 目标BOM FJ00001加载完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 打开目标BOM编辑页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已完成超长备注内容输入
+[32mINFO    [0m playwright_ui_automation:logger.py:104 提交修改保存请求
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证通过：超长备注保存成功，用例执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyRemarkLengthValidation

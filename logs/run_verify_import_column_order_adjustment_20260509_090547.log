@@ -1,0 +1,30 @@
+2026-05-09 09:05:47,305 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 09:05:47,305 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 09:05:47,306 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_import_column_order_adjustment.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_090547']
+2026-05-09 09:05:48,941 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyImportColumnOrderAdjustment
+2026-05-09 09:05:48,954 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 09:05:52,035 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 09:05:52,038 - INFO - logger.py:104 - info - 开始执行用例：verify_import_column_order_adjustment
+2026-05-09 09:05:52,041 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-09 09:05:52,046 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 09:05:52,053 - INFO - logger.py:104 - info - 测试文件: D:\install\auto_ui-master\src\data\LD\bom_management\工作簿5.xlsx
+2026-05-09 09:05:52,056 - INFO - logger.py:104 - info - 登录目标系统
+2026-05-09 09:05:52,059 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 09:05:52,069 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 09:05:52,074 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 09:05:55,952 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 09:05:56,516 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 09:06:02,530 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 09:06:02,533 - INFO - logger.py:104 - info - 进入物料清单页面
+2026-05-09 09:06:03,738 - INFO - logger.py:104 - info - 打开导入弹窗
+2026-05-09 09:06:04,994 - INFO - logger.py:104 - info - 上传导入文件：工作簿5.xlsx
+2026-05-09 09:06:05,547 - INFO - logger.py:104 - info - 确认导入，验证导入执行结果
+2026-05-09 09:06:09,155 - INFO - logger.py:104 - info - 关闭导入弹窗
+2026-05-09 09:06:09,703 - INFO - logger.py:104 - info - 用例verify_import_column_order_adjustment执行完成
+2026-05-09 09:06:09,707 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 09:06:09,746 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 09:06:09,778 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 09:06:10,098 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyImportColumnOrderAdjustment
+2026-05-09 09:06:11,051 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 09:06:11,052 - INFO - logger.py:104 - info - 测试执行完成，耗时: 23.72秒
+2026-05-09 09:06:11,053 - INFO - logger.py:104 - info - 执行结果: 成功

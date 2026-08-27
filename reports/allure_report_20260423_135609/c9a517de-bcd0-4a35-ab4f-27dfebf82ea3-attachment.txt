@@ -1,0 +1,21 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestBOMTemplatePagination
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行verify_bom_template_pagination
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入物料清单菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证BOM列表总信息可见
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试下一页跳转功能
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试切换每页条数为50条
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试上一页跳转功能
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试指定页码跳转功能，跳转到第3页
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例verify_bom_template_pagination执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestBOMTemplatePagination

@@ -1,0 +1,25 @@
+2026-04-27 13:54:24,171 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 13:54:24,172 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 13:54:24,172 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_other_inbound_initialization.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_135424']
+2026-04-27 13:54:25,975 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyOtherInboundInitialization
+2026-04-27 13:54:25,984 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 13:54:28,718 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 13:54:28,725 - INFO - logger.py:104 - info - 开始执行用例：verify_other_inbound_initialization
+2026-04-27 13:54:28,736 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 13:54:28,751 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 13:54:28,760 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 13:54:28,783 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 13:54:28,788 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 13:54:32,962 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 13:54:33,565 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 13:54:39,607 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 13:54:39,610 - INFO - logger.py:104 - info - 进入编码规则配置菜单
+2026-04-27 13:54:43,019 - INFO - logger.py:104 - info - 完成查看，点击返回
+2026-04-27 13:54:43,596 - INFO - logger.py:104 - info - 用例verify_other_inbound_initialization执行完成
+2026-04-27 13:54:43,599 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 13:54:43,696 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 13:54:43,727 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 13:54:44,253 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyOtherInboundInitialization
+2026-04-27 13:54:45,055 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 13:54:45,055 - INFO - logger.py:104 - info - 测试执行完成，耗时: 20.86秒
+2026-04-27 13:54:45,056 - INFO - logger.py:104 - info - 执行结果: 成功

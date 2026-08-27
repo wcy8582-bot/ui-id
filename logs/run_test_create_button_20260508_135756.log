@@ -1,0 +1,6 @@
+2026-05-08 13:57:56,770 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-08 13:57:56,771 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-08 13:57:56,771 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\product_file\\test_test_create_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260508_135756']
+2026-05-08 13:57:58,793 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-08 13:57:58,802 - INFO - logger.py:104 - info - 测试执行完成，耗时: 1.99秒
+2026-05-08 13:57:58,802 - INFO - logger.py:104 - info - 执行结果: 失败

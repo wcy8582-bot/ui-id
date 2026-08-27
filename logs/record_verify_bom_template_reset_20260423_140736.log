@@ -1,0 +1,113 @@
+2026-04-23 14:07:36,917 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=verify_bom_template_reset, ms_id=0
+2026-04-23 14:07:36,920 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 14:07:36,921 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 14:08:37,285 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 14:08:37,286 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("父项产品编码父项产品名称父项产品规格子项产品编码子项产品名称子项产品规格父项产品来源请选择父项产品来源子项产品来源请选择子项产品属来源查 询重 置")).to_be_visible()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").fill("FJ")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").press("CapsLock")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="父项产品编码 :").fill("FJ00001")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="重 置").click()
+    expect(page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("父项产品编码父项产品名称父项产品规格子项产品编码子项产品名称子项产品规格父项产品来源请选择父项产品来源子项产品来源请选择子项产品属来源查 询重 置")).to_be_visible()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 14:08:37,288 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 14:08:37,289 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:08:37,289 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 14:08:37,289 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:08:37,289 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776924517
+2026-04-23 14:08:37,289 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 14:08:37,290 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 14:08:37,290 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 14:09:11,882 - INFO - logger.py:104 - info - 总token消耗: 3433
+2026-04-23 14:09:11,882 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 34.59秒
+2026-04-23 14:09:11,884 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 14:09:11,885 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 14:09:11,885 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 14:09:11,885 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:09:11,885 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 14:09:11,886 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 14:09:11,886 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 14:09:11,886 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestVerifyBomTemplateReset(BaseTest):
+    """
+    用例名：verify_bom_template_reset
+    用例ms的id：0
+    """
+
+    def test_verify_bom_template_reset(self, page: Page, project_name: str):
+        f"""测试BOM模板重置功能
+        用例名：verify_bom_template_reset
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_bom_template_reset")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法完成登录
+        self.login(page, project_name)
+        
+        # 导航进入物料清单页面
+        logger.info("进入物料清单模块")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("物料清单").click()
+        
+        # 获取物料清单页面所在iframe内容框架
+        bom_iframe_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        
+        # 验证物料清单页面加载完成
+        expect(bom_iframe_frame.get_by_text("父项产品编码父项产品名称父项产品规格子项产品编码子项产品名称子项产品规格父项产品来源请选择父项产品来源子项产品来源请选择子项产品属来源查 询重 置")).to_be_visible()
+        
+        # 输入测试查询条件，去除录制产生的多余重复按键、填充操作
+        logger.info("输入测试父项产品编码")
+        input_elem = bom_iframe_frame.get_by_role("textbox", name="父项产品编码 :")
+        input_elem.click()
+        input_elem.fill("FJ00001")
+        
+        # 点击重置按钮
+        logger.info("点击重置按钮，验证重置功能")
+        bom_iframe_frame.get_by_role("button", name="重 置").click()
+        
+        # 验证重置后页面恢复初始状态，功能正常
+        expect(bom_iframe_frame.get_by_text("父项产品编码父项产品名称父项产品规格子项产品编码子项产品名称子项产品规格父项产品来源请选择父项产品来源子项产品来源请选择子项产品属来源查 询重 置")).to_be_visible()
+        
+        logger.info(f"用例verify_bom_template_reset执行完成")
+2026-04-23 14:09:11,887 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 14:09:11,888 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_verify_bom_template_reset.py

@@ -1,0 +1,2 @@
+2026-08-24 11:35:01,735 - INFO - logger.py:105 - info - SQLite 数据库连接成功: data\benchmark_test.db
+2026-08-24 11:35:01,757 - INFO - logger.py:105 - info - SQLite 数据库表初始化成功

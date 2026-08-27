@@ -1,0 +1,27 @@
+2026-05-08 10:18:19,420 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-08 10:18:19,421 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-08 10:18:19,421 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\product_file\\test_product_picture.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260508_101819']
+2026-05-08 10:18:20,927 - INFO - logger.py:104 - info - 开始执行测试: TestProductPicture
+2026-05-08 10:18:20,937 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-08 10:18:23,861 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 10:18:23,864 - INFO - logger.py:104 - info - 开始执行用例：product_picture
+2026-05-08 10:18:23,867 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-08 10:18:23,871 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 10:18:23,874 - INFO - logger.py:104 - info - 登录系统
+2026-05-08 10:18:23,877 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-08 10:18:23,879 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-08 10:18:23,881 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-08 10:18:27,870 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-08 10:18:28,449 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-08 10:18:34,489 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-08 10:18:34,492 - INFO - logger.py:104 - info - 进入产品档案页面
+2026-05-08 10:18:35,682 - INFO - logger.py:104 - info - 点击新增产品按钮
+2026-05-08 10:18:36,971 - INFO - logger.py:104 - info - 进入产品图片上传环节
+2026-05-08 10:18:37,528 - INFO - logger.py:104 - info - 上传测试图片文件: D:\install\auto_ui-master\src\pages\LD\product_file\1.png
+2026-05-08 10:19:08,399 - INFO - logger.py:104 - info - 关闭页面
+2026-05-08 10:19:08,405 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-08 10:19:08,417 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-08 10:19:08,717 - INFO - logger.py:104 - info - 测试执行完成: TestProductPicture
+2026-05-08 10:19:10,153 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-08 10:19:10,156 - INFO - logger.py:104 - info - 测试执行完成，耗时: 50.67秒
+2026-05-08 10:19:10,156 - INFO - logger.py:104 - info - 执行结果: 失败

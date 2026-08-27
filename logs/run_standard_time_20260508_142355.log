@@ -1,0 +1,23 @@
+2026-05-08 14:23:55,333 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-08 14:23:55,333 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-08 14:23:55,333 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\product_file\\test_standard_time.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260508_142355']
+2026-05-08 14:23:58,113 - INFO - logger.py:104 - info - 开始执行测试: TestStandardTime
+2026-05-08 14:23:58,122 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-08 14:24:01,615 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 14:24:01,633 - INFO - logger.py:104 - info - 开始执行用例：standard_time
+2026-05-08 14:24:01,640 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-05-08 14:24:01,644 - INFO - logger.py:104 - info - ============================================================
+2026-05-08 14:24:01,651 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-08 14:24:01,659 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-08 14:24:01,663 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-08 14:24:07,638 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-08 14:24:08,208 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-08 14:24:14,234 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-08 14:24:14,238 - INFO - logger.py:104 - info - 系统登录完成
+2026-05-08 14:24:37,597 - INFO - logger.py:104 - info - 关闭页面
+2026-05-08 14:24:37,617 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-08 14:24:37,638 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-08 14:24:37,901 - INFO - logger.py:104 - info - 测试执行完成: TestStandardTime
+2026-05-08 14:24:38,676 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-08 14:24:38,677 - INFO - logger.py:104 - info - 测试执行完成，耗时: 43.32秒
+2026-05-08 14:24:38,677 - INFO - logger.py:104 - info - 执行结果: 失败

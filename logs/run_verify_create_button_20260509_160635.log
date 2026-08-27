@@ -1,0 +1,24 @@
+2026-05-09 16:06:35,504 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 16:06:35,505 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 16:06:35,505 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\printer_management\\test_verify_create_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_160635']
+2026-05-09 16:06:37,327 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreateCodeRule
+2026-05-09 16:06:37,338 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 16:06:40,892 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:06:40,896 - INFO - logger.py:104 - info - 开始执行verify_create_button
+2026-05-09 16:06:40,899 - INFO - logger.py:104 - info - 用例ms的id：101097
+2026-05-09 16:06:40,903 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 16:06:40,906 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 16:06:40,909 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 16:06:40,912 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 16:06:44,717 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 16:06:45,281 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 16:06:51,310 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 16:06:51,313 - INFO - logger.py:104 - info - 进入编码规则配置页面
+2026-05-09 16:06:52,558 - INFO - logger.py:104 - info - 打开新增编码规则弹窗，填写基本信息
+2026-05-09 16:07:08,168 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 16:07:08,178 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 16:07:08,196 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 16:07:08,636 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreateCodeRule
+2026-05-09 16:07:09,283 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 16:07:09,285 - INFO - logger.py:104 - info - 测试执行完成，耗时: 33.75秒
+2026-05-09 16:07:09,286 - INFO - logger.py:104 - info - 执行结果: 失败

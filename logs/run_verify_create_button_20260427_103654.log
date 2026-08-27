@@ -1,0 +1,26 @@
+2026-04-27 10:36:54,753 - INFO - logger.py:104 - info - 开始执行测试
+2026-04-27 10:36:54,754 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-04-27 10:36:54,754 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_create_button.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260427_103654']
+2026-04-27 10:36:57,579 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyCreateCodeRule
+2026-04-27 10:36:57,590 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-04-27 10:37:00,390 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 10:37:00,397 - INFO - logger.py:104 - info - 开始执行用例：verify_create_button
+2026-04-27 10:37:00,464 - INFO - logger.py:104 - info - 用例ms的id：0
+2026-04-27 10:37:00,486 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 10:37:00,489 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-04-27 10:37:00,495 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 10:37:00,498 - INFO - logger.py:104 - info - 用户名: admin
+2026-04-27 10:37:04,602 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-04-27 10:37:05,229 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-04-27 10:37:11,256 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-04-27 10:37:11,260 - INFO - logger.py:104 - info - 登录成功，进入编码规则配置菜单
+2026-04-27 10:37:12,431 - INFO - logger.py:104 - info - 点击创建按钮，开始新增编码规则
+2026-04-27 10:37:13,615 - INFO - logger.py:104 - info - 填写编码规则基础信息
+2026-04-27 10:37:15,840 - INFO - logger.py:104 - info - 选择业务类型：采购入库批号
+2026-04-27 10:37:47,331 - INFO - logger.py:104 - info - 关闭页面
+2026-04-27 10:37:47,349 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-04-27 10:37:47,381 - INFO - logger.py:104 - info - 关闭浏览器
+2026-04-27 10:37:47,691 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyCreateCodeRule
+2026-04-27 10:37:48,335 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-04-27 10:37:48,336 - INFO - logger.py:104 - info - 测试执行完成，耗时: 53.56秒
+2026-04-27 10:37:48,336 - INFO - logger.py:104 - info - 执行结果: 失败

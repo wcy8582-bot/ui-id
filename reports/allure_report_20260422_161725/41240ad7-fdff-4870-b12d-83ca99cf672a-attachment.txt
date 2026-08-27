@@ -1,0 +1,31 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestVerifyImportEmptyExcelFile
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_import_empty_excel_file
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试文件绝对路径: D:\install\auto_ui-master\src\data\LD\bom_management\工作簿1.xlsx
+[32mINFO    [0m playwright_ui_automation:logger.py:104 文件存在性验证通过
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录目标系统
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 进入基础资料->物料清单页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 等待导入按钮加载
+[32mINFO    [0m playwright_ui_automation:logger.py:104 上传空Excel文件
+[32mINFO    [0m playwright_ui_automation:logger.py:104 文件已上传: D:\install\auto_ui-master\src\data\LD\bom_management\工作簿1.xlsx
+[32mINFO    [0m playwright_ui_automation:logger.py:104 等待文件上传
+[32mINFO    [0m playwright_ui_automation:logger.py:104 确认导入操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 验证空文件导入结果提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 实际导入日志内容: 导入日志
+[2026-04-22 16:18:07 315] - 导入开始
+[2026-04-22 16:18:07 373] - excel表格数据为空
+[2026-04-22 16:18:07 375] - 导入结束
+
+导入结果备份下载
+关 闭
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestVerifyImportEmptyExcelFile

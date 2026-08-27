@@ -1,0 +1,123 @@
+2026-04-27 09:32:59,232 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=code_rule_config, 用例=verify_whether_field, ms_id=0
+2026-04-27 09:32:59,235 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-27 09:32:59,235 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-27 09:34:27,231 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-27 09:34:27,232 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_role("button", name="确定").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("编码规则配置").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 创建").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入规则名称").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("textbox", name="请输入规则名称").fill("m")
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("dialog", name="新增编码规则").locator("#businessTypeId").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_title("生产工单批号").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 增行").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_4").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_text("流水号").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 流水号 自增长数字 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-27 09:34:27,235 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-27 09:34:27,235 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 09:34:27,235 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-27 09:34:27,235 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 09:34:27,236 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1777253667
+2026-04-27 09:34:27,237 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-27 09:34:27,237 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-27 09:34:27,237 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-27 09:34:56,139 - INFO - logger.py:104 - info - 总token消耗: 3165
+2026-04-27 09:34:56,139 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 28.90秒
+2026-04-27 09:34:56,141 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-27 09:34:56,141 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - ============================================================
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-27 09:34:56,142 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestVerifyWhetherField(BaseTest):
+    """
+    用例名：verify_whether_field
+    用例ms的id：0
+    """
+
+    def test_verify_whether_field(self, page: Page, project_name: str):
+        f"""测试编码规则配置新增功能
+        用例名：verify_whether_field
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_whether_field")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法
+        logger.info("完成系统登录")
+        self.login(page, project_name)
+
+        # 导航进入编码规则配置页面
+        logger.info("导航到编码规则配置页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("编码规则配置").click()
+
+        # 获取目标内容iframe
+        code_rule_iframe = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        logger.info("开始执行新增编码规则操作")
+
+        # 点击创建按钮
+        code_rule_iframe.get_by_role("button", name="plus-circle 创建").click()
+        # 输入规则名称
+        code_rule_iframe.get_by_role("textbox", name="请输入规则名称").click()
+        code_rule_iframe.get_by_role("textbox", name="请输入规则名称").fill("m")
+        # 选择业务类型
+        code_rule_iframe.get_by_role("dialog", name="新增编码规则").locator("#businessTypeId").click()
+        code_rule_iframe.get_by_title("生产工单批号").click()
+        # 新增规则行
+        code_rule_iframe.get_by_role("button", name="plus-circle 增行").click()
+        # 选择规则类型为流水号
+        code_rule_iframe.locator("#rc_select_4").click()
+        code_rule_iframe.get_by_text("流水号").click()
+        # 去除录制产生的重复误点击，保留核心操作
+        code_rule_iframe.get_by_role("button", name="holder 流水号 自增长数字 无 是 删除").click()
+
+        logger.info("用例verify_whether_field执行完成")
+2026-04-27 09:34:56,144 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-27 09:34:56,146 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\code_rule_config\test_verify_whether_field.py

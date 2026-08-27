@@ -1,0 +1,133 @@
+2026-04-23 16:14:38,716 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=verify_child_product, ms_id=0
+2026-04-23 16:14:38,720 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 16:14:38,721 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 16:16:11,008 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 16:16:11,008 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="CP2026042300003").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="返 回").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator(".ant-table-cell.ant-table-cell-fix-right.ant-table-cell-fix-right-first.ant-table-cell-row-hover > .ant-menu-overflow > li > .ant-menu-title-content > .edit-btn").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 添加子项产品").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator(".tree-layout > .list-layout > .table-wrapper").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("row", name="CPJSG001 金属管 物料 - - 外采 根 - - 周栋 2026-04-23 16:03:38 周栋 2026-04-23 16:03:").get_by_label("", exact=True).check()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="选 择").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("创建物料清单").get_by_role("columnheader", name="单位用量").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 3 CPJSG001 金属管").get_by_role("spinbutton").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_13").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_title("拉伸").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="提示是否确认保存该物料清单？取 消确 认").nth(5).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="确 认").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="保存成功！").nth(3).click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776932171
+2026-04-23 16:16:11,010 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 16:16:11,011 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 16:16:11,011 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 16:17:22,455 - INFO - logger.py:104 - info - 总token消耗: 4867
+2026-04-23 16:17:22,456 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 71.44秒
+2026-04-23 16:17:22,458 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 16:17:22,459 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 16:17:22,459 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 16:17:22,459 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:17:22,459 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 16:17:22,459 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:17:22,460 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 16:17:22,460 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+class TestVerifyChildProduct(BaseTest):
+    """
+    用例名：verify_child_product
+    用例ms的id：0
+    """
+
+    def test_verify_child_product(self, page: Page, project_name: str):
+        f"""测试物料清单添加子项产品功能
+        用例名：verify_child_product
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：verify_child_product")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法
+        self.login(page, project_name)
+        
+        # 进入物料清单菜单
+        logger.info("进入基础资料->物料清单页面")
+        page.get_by_text("基础资料").click()
+        page.get_by_text("物料清单").click()
+
+        # 选择目标BOM后点击返回
+        logger.info("选择目标物料，点击返回")
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("cell", name="CP2026042300003").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="返 回").click()
+
+        # 点击编辑，触发添加子项产品
+        logger.info("点击编辑，点击添加子项产品按钮")
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator(".ant-table-cell.ant-table-cell-fix-right.ant-table-cell-fix-right-first.ant-table-cell-row-hover > .ant-menu-overflow > li > .ant-menu-title-content > .edit-btn").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="plus-circle 添加子项产品").click()
+
+        # 选择目标子项物料
+        logger.info("选择子项物料并确认选择")
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator(".tree-layout > .list-layout > .table-wrapper").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("row", name="CPJSG001 金属管 物料 - - 外采 根 - - 周栋 2026-04-23 16:03:38 周栋 2026-04-23 16:03:").get_by_label("", exact=True).check()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="选 择").click()
+
+        # 设置单位用量，首次保存
+        logger.info("填写单位用量，保存修改")
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_label("创建物料清单").get_by_role("columnheader", name="单位用量").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="holder 3 CPJSG001 金属管").get_by_role("spinbutton").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+
+        # 选择工艺，最终确认保存
+        logger.info("选择工艺，确认保存物料清单")
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("#rc_select_13").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_title("拉伸").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="保 存").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="提示是否确认保存该物料清单？取 消确 认").nth(5).click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("button", name="确 认").click()
+        page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="保存成功！").nth(3).click()
+
+        logger.info("用例执行完成：verify_child_product")
+2026-04-23 16:17:22,461 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 16:17:22,463 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_verify_child_product.py

@@ -1,0 +1,34 @@
+2026-05-09 15:00:26,818 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 15:00:26,820 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 15:00:26,820 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\code_rule_config\\test_verify_multirule_enable.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_150026']
+2026-05-09 15:00:28,679 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyMultiruleEnable
+2026-05-09 15:00:28,691 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 15:00:33,048 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 15:00:33,054 - INFO - logger.py:104 - info - 开始执行用例：verify_multirule_enable
+2026-05-09 15:00:33,057 - INFO - logger.py:104 - info - 用例ms的id：101103
+2026-05-09 15:00:33,059 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 15:00:33,062 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 15:00:33,065 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 15:00:33,069 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 15:00:37,087 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 15:00:37,819 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 15:00:43,879 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 15:00:43,882 - INFO - logger.py:104 - info - 进入编码规则配置菜单
+2026-05-09 15:00:45,110 - INFO - logger.py:104 - info - 等待规则列表加载
+2026-05-09 15:00:46,123 - INFO - logger.py:104 - info - 查找第一个状态为'启用'的规则
+2026-05-09 15:00:46,159 - INFO - logger.py:104 - info - 成功定位到第一个启用状态的规则
+2026-05-09 15:00:46,173 - INFO - logger.py:104 - info - 记录业务类型：生产工单批号
+2026-05-09 15:00:46,175 - INFO - logger.py:104 - info - 查找业务类型为'生产工单批号'且状态为'停用'的规则
+2026-05-09 15:00:46,409 - INFO - logger.py:104 - info - 找到目标行：业务类型=生产工单批号, 状态=停用
+2026-05-09 15:00:46,422 - INFO - logger.py:104 - info - 成功定位到目标停用规则
+2026-05-09 15:00:46,424 - INFO - logger.py:104 - info - 点击目标行的'启用'按钮
+2026-05-09 15:00:47,001 - INFO - logger.py:104 - info - 验证弹窗提示信息
+2026-05-09 15:00:47,015 - INFO - logger.py:104 - info - 点击取消按钮
+2026-05-09 15:00:47,581 - INFO - logger.py:104 - info - 用例执行完成
+2026-05-09 15:00:47,586 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 15:00:47,604 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 15:00:47,667 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 15:00:48,178 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyMultiruleEnable
+2026-05-09 15:00:49,242 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 15:00:49,243 - INFO - logger.py:104 - info - 测试执行完成，耗时: 22.39秒
+2026-05-09 15:00:49,244 - INFO - logger.py:104 - info - 执行结果: 成功

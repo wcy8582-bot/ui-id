@@ -1,0 +1,183 @@
+2026-05-11 09:10:51,933 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-11 09:10:51,934 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-11 09:10:51,934 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\system_configuration', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260511_091051']
+2026-05-11 09:10:54,508 - INFO - logger.py:104 - info - 开始执行测试: TestCheckSettingsList
+2026-05-11 09:10:54,516 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:10:58,198 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:10:58,201 - INFO - logger.py:104 - info - 开始执行用例：check_settings_list
+2026-05-11 09:10:58,204 - INFO - logger.py:104 - info - 用例ms的id：10112
+2026-05-11 09:10:58,209 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:10:58,220 - INFO - logger.py:104 - info - 调用公用登录方法完成登录
+2026-05-11 09:10:58,223 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:10:58,236 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:10:58,252 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:11:02,414 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:11:03,013 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:11:09,044 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:11:09,047 - INFO - logger.py:104 - info - 进入标签打印配置页面
+2026-05-11 09:11:10,936 - INFO - logger.py:104 - info - 点击页面刷新按钮
+2026-05-11 09:11:11,894 - INFO - logger.py:104 - info - 开始校验列表表头信息
+2026-05-11 09:11:11,963 - INFO - logger.py:104 - info - 校验列表行操作按钮信息
+2026-05-11 09:11:11,978 - INFO - logger.py:104 - info - 用例check_settings_list执行完成
+2026-05-11 09:11:11,982 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:11:11,999 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:11:12,050 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:11:12,393 - INFO - logger.py:104 - info - 测试执行完成: TestCheckSettingsList
+2026-05-11 09:11:12,422 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyDeleteFunction
+2026-05-11 09:11:12,425 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:11:16,040 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:16,044 - INFO - logger.py:104 - info - 开始执行用例：verify_delete_function
+2026-05-11 09:11:16,047 - INFO - logger.py:104 - info - 用例ms的id：101116
+2026-05-11 09:11:16,050 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:16,053 - INFO - logger.py:104 - info - 调用公用登录方法登录系统
+2026-05-11 09:11:16,056 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:11:16,059 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:11:16,062 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:11:20,043 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:11:20,615 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:11:26,643 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:11:26,646 - INFO - logger.py:104 - info - 登录完成，后续跳转进入标签打印配置页面
+2026-05-11 09:11:28,455 - INFO - logger.py:104 - info - 开始执行删除功能验证
+2026-05-11 09:11:28,457 - INFO - logger.py:104 - info - 测试场景1：删除第二条配置，确认删除操作
+2026-05-11 09:11:29,861 - INFO - logger.py:104 - info - 测试场景2：删除第一条配置，取消删除操作
+2026-05-11 09:11:30,983 - INFO - logger.py:104 - info - 用例verify_delete_function执行完成
+2026-05-11 09:11:30,996 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:11:31,023 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:11:31,091 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:11:31,577 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyDeleteFunction
+2026-05-11 09:11:31,613 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyEditFunction
+2026-05-11 09:11:31,619 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:11:35,086 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:35,091 - INFO - logger.py:104 - info - 开始执行用例：verify_edit_function
+2026-05-11 09:11:35,100 - INFO - logger.py:104 - info - 用例ms的id：101123
+2026-05-11 09:11:35,113 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:35,123 - INFO - logger.py:104 - info - 执行系统登录
+2026-05-11 09:11:35,136 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:11:35,144 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:11:35,148 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:11:38,995 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:11:39,567 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:11:45,588 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:11:45,591 - INFO - logger.py:104 - info - 导航进入标签打印配置页面
+2026-05-11 09:11:47,448 - INFO - logger.py:104 - info - 打开目标条目编辑
+2026-05-11 09:11:48,449 - INFO - logger.py:104 - info - 修改模板ID并保存
+2026-05-11 09:11:49,556 - INFO - logger.py:104 - info - verify_edit_function用例执行完成
+2026-05-11 09:11:49,563 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:11:49,581 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:11:49,638 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:11:49,960 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyEditFunction
+2026-05-11 09:11:49,991 - INFO - logger.py:104 - info - 开始执行测试: TestLabelPrintConfigTest
+2026-05-11 09:11:49,994 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:11:53,503 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:53,508 - INFO - logger.py:104 - info - 开始执行用例：verify_left_and_right_list_interaction
+2026-05-11 09:11:53,512 - INFO - logger.py:104 - info - 用例ms的id：101117
+2026-05-11 09:11:53,515 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:11:53,518 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:11:53,521 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:11:53,524 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:11:57,340 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:11:57,914 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:12:03,929 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:12:03,932 - INFO - logger.py:104 - info - 导航进入标签打印配置页面
+2026-05-11 09:12:05,818 - INFO - logger.py:104 - info - 选择托码分类
+2026-05-11 09:12:06,604 - INFO - logger.py:104 - info - 点击新增按钮
+2026-05-11 09:12:07,218 - INFO - logger.py:104 - info - 点击取消新增按钮
+2026-05-11 09:12:07,798 - INFO - logger.py:104 - info - verify_left_and_right_list_interaction 用例执行完成
+2026-05-11 09:12:07,804 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:12:07,825 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:12:07,891 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:12:08,297 - INFO - logger.py:104 - info - 测试执行完成: TestLabelPrintConfigTest
+2026-05-11 09:12:08,326 - INFO - logger.py:104 - info - 开始执行测试: TestLabelPrintTemplateCreate
+2026-05-11 09:12:08,333 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:12:12,101 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:12,104 - INFO - logger.py:104 - info - 开始执行用例：verify_new_create_exists_function
+2026-05-11 09:12:12,106 - INFO - logger.py:104 - info - 用例ms的id：101112
+2026-05-11 09:12:12,110 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:12,114 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:12:12,117 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:12:12,120 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:12:16,034 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:12:16,591 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:12:22,636 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:12:22,639 - INFO - logger.py:104 - info - 系统登录完成，开始业务操作
+2026-05-11 09:12:22,642 - INFO - logger.py:104 - info - 导航进入标签打印配置页面
+2026-05-11 09:12:24,518 - INFO - logger.py:104 - info - 获取业务iframe完成，开始新增操作
+2026-05-11 09:12:25,809 - INFO - logger.py:104 - info - 填写模板基础信息，模板ID=666，模板名称=测试
+2026-05-11 09:12:26,876 - INFO - logger.py:104 - info - 选择模板类型
+2026-05-11 09:12:27,999 - INFO - logger.py:104 - info - 点击保存按钮完成新增
+2026-05-11 09:12:28,563 - INFO - logger.py:104 - info - 用例verify_new_create_exists_function执行完成
+2026-05-11 09:12:28,569 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:12:28,587 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:12:28,650 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:12:28,991 - INFO - logger.py:104 - info - 测试执行完成: TestLabelPrintTemplateCreate
+2026-05-11 09:12:29,011 - INFO - logger.py:104 - info - 开始执行测试: TestLabelPrintTemplateCreate
+2026-05-11 09:12:29,013 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:12:32,796 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:32,811 - INFO - logger.py:104 - info - 开始执行用例：verify_new_create_function
+2026-05-11 09:12:32,817 - INFO - logger.py:104 - info - 用例ms的id：101113
+2026-05-11 09:12:32,880 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:32,896 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:12:32,899 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:12:32,902 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:12:36,731 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:12:37,308 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:12:43,321 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:12:43,324 - INFO - logger.py:104 - info - 系统登录完成，开始业务操作
+2026-05-11 09:12:43,326 - INFO - logger.py:104 - info - 导航进入标签打印配置页面
+2026-05-11 09:12:45,160 - INFO - logger.py:104 - info - 获取业务iframe完成，开始新增操作
+2026-05-11 09:12:46,065 - INFO - logger.py:104 - info - 填写模板基础信息
+2026-05-11 09:12:47,143 - INFO - logger.py:104 - info - 选择模板类型
+2026-05-11 09:12:48,251 - INFO - logger.py:104 - info - 点击保存按钮完成新增
+2026-05-11 09:12:48,831 - INFO - logger.py:104 - info - 用例verify_new_create_function执行完成
+2026-05-11 09:12:48,836 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:12:48,861 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:12:48,952 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:12:49,402 - INFO - logger.py:104 - info - 测试执行完成: TestLabelPrintTemplateCreate
+2026-05-11 09:12:49,448 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyRequireField
+2026-05-11 09:12:49,452 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:12:52,848 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:52,851 - INFO - logger.py:104 - info - 开始执行用例：verify_require_field
+2026-05-11 09:12:52,854 - INFO - logger.py:104 - info - 用例ms的id：101123
+2026-05-11 09:12:52,856 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:12:52,860 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:12:52,864 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:12:52,868 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:12:56,763 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:12:57,445 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:13:03,473 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:13:03,476 - INFO - logger.py:104 - info - 登录成功，开始导航到目标页面
+2026-05-11 09:13:03,479 - INFO - logger.py:104 - info - 点击基础资料菜单
+2026-05-11 09:13:04,033 - INFO - logger.py:104 - info - 点击系统配置菜单
+2026-05-11 09:13:04,677 - INFO - logger.py:104 - info - 点击进入标签打印配置页面
+2026-05-11 09:13:05,334 - INFO - logger.py:104 - info - 点击新增按钮打开新增表单
+2026-05-11 09:13:06,268 - INFO - logger.py:104 - info - 不填写任何内容，直接点击保存按钮
+2026-05-11 09:13:06,862 - INFO - logger.py:104 - info - 校验必填项提示信息是否正常显示
+2026-05-11 09:13:06,874 - INFO - logger.py:104 - info - 点击取消关闭新增表单
+2026-05-11 09:13:07,453 - INFO - logger.py:104 - info - 用例verify_require_field执行完成
+2026-05-11 09:13:07,458 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:13:07,478 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:13:07,536 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:13:08,179 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyRequireField
+2026-05-11 09:13:08,233 - INFO - logger.py:104 - info - 开始执行测试: TestLabelPrintTemplateAdd
+2026-05-11 09:13:08,237 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-11 09:13:11,624 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:13:11,628 - INFO - logger.py:104 - info - 开始执行用例：verify_template_name_field_check
+2026-05-11 09:13:11,632 - INFO - logger.py:104 - info - 用例ms的id：101109
+2026-05-11 09:13:11,634 - INFO - logger.py:104 - info - ============================================================
+2026-05-11 09:13:11,637 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-11 09:13:11,640 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-11 09:13:11,644 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-11 09:13:15,666 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-11 09:13:16,230 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-11 09:13:22,248 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-11 09:13:22,251 - INFO - logger.py:104 - info - 导航到标签打印配置页面
+2026-05-11 09:13:24,103 - INFO - logger.py:104 - info - 进入新增模板流程，填写模板信息
+2026-05-11 09:13:28,358 - INFO - logger.py:104 - info - 提交模板信息，验证保存结果
+2026-05-11 09:13:29,481 - INFO - logger.py:104 - info - verify_template_name_field_check 用例执行完成
+2026-05-11 09:13:29,485 - INFO - logger.py:104 - info - 关闭页面
+2026-05-11 09:13:29,502 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-11 09:13:29,587 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-11 09:13:29,958 - INFO - logger.py:104 - info - 测试执行完成: TestLabelPrintTemplateAdd
+2026-05-11 09:13:30,854 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-11 09:13:30,857 - INFO - logger.py:104 - info - 测试执行完成，耗时: 158.89秒
+2026-05-11 09:13:30,857 - INFO - logger.py:104 - info - 执行结果: 成功

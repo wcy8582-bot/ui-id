@@ -1,0 +1,143 @@
+2026-04-23 16:39:43,491 - INFO - logger.py:104 - info - 开始录制: 项目=LD, 模块=bom_management, 用例=bom_list_data, ms_id=0
+2026-04-23 16:39:43,495 - INFO - logger.py:104 - info - 启动Playwright Codegen，浏览器: chromium，URL: https://test2.saas-test3.supcon.com:32188
+2026-04-23 16:39:43,497 - INFO - logger.py:104 - info - 已启用忽略 HTTPS 证书错误
+2026-04-23 16:41:10,452 - INFO - logger.py:104 - info - 录制完成，录制完的代码:
+2026-04-23 16:41:10,453 - INFO - logger.py:104 - info - import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context(ignore_https_errors=True)
+    page = context.new_page()
+    page.goto("https://test2.saas-test3.supcon.com:32188/login#/login")
+    page.get_by_role("textbox", name="请输入用户名").click()
+    page.get_by_role("textbox", name="请输入用户名").fill("admin")
+    page.get_by_role("textbox", name="请输入密码").click()
+    page.get_by_role("textbox", name="请输入密码").fill("Supcon1304@")
+    page.get_by_role("button", name="登 录").click()
+    page.get_by_text("基础资料").click()
+    page.get_by_text("物料清单").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.locator("div").filter(has_text="新增导入导出序号父项产品编码父项产品名称父项产品规格父项产品来源父项单位子项产品编码子项产品名称子项产品规格子项产品来源备注子项单位创建人单位用量创建时间更新人").nth(4).click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="序号").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品名称").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品规格").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品来源").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品来源").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项产品来源").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项单位").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="父项单位").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项产品编码").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项产品名称").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项产品规格").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项产品来源").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="备注").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项单位").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="子项单位").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="创建人").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="单位用量").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="创建时间").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="单位用量").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="创建时间").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="创建时间").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="更新人").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="更新人").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="更新时间").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="操作").click()
+    page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame.get_by_role("columnheader", name="操作").click()
+    page.close()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
+
+2026-04-23 16:41:10,456 - INFO - logger.py:104 - info - 开始AI代码格式化
+2026-04-23 16:41:10,456 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:41:10,457 - INFO - logger.py:104 - info - 开始处理录制代码...
+2026-04-23 16:41:10,457 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:41:10,457 - INFO - logger.py:104 - info - 构建提示词完成，时间戳: 1776933670
+2026-04-23 16:41:10,457 - INFO - logger.py:104 - info - 调用AI处理录制代码...
+2026-04-23 16:41:10,457 - INFO - logger.py:104 - info - 开始调用豆包AI API...
+2026-04-23 16:41:10,458 - INFO - logger.py:104 - info - 发送请求到: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+2026-04-23 16:42:00,404 - INFO - logger.py:104 - info - 总token消耗: 4411
+2026-04-23 16:42:00,404 - INFO - logger.py:104 - info - 豆包AI API调用成功，耗时: 49.95秒
+2026-04-23 16:42:00,406 - INFO - logger.py:104 - info - AI返回原始响应类型: <class 'dict'>
+2026-04-23 16:42:00,406 - INFO - logger.py:104 - info - AI处理代码成功
+2026-04-23 16:42:00,406 - INFO - logger.py:104 - info - 提取代码块成功
+2026-04-23 16:42:00,407 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:42:00,407 - INFO - logger.py:104 - info - 代码处理完成
+2026-04-23 16:42:00,407 - INFO - logger.py:104 - info - ============================================================
+2026-04-23 16:42:00,407 - INFO - logger.py:104 - info - 代码格式化完成:
+2026-04-23 16:42:00,408 - INFO - logger.py:104 - info - import re
+import pytest
+from playwright.sync_api import Page, expect
+from src.base.base_test import BaseTest
+from src.common.logger import logger
+
+
+class TestBomListData(BaseTest):
+    """
+    用例名：bom_list_data
+    用例ms的id：0
+    """
+
+    def test_bom_list_data(self, page: Page, project_name: str):
+        f"""测试BOM物料清单表格列操作
+        用例名：bom_list_data
+        用例ms的id：0
+        项目名：{project_name}
+
+        Args:
+            page: 页面实例
+            project_name: 项目名称
+        """
+        logger.info("=" * 60)
+        logger.info(f"开始执行用例：bom_list_data")
+        logger.info(f"用例ms的id：0")
+        logger.info("=" * 60)
+        
+        # 使用封装好的公用登录方法
+        self.login(page, project_name)
+        logger.info("登录成功，进入菜单导航")
+
+        # 进入物料清单页面
+        logger.info("点击基础资料菜单")
+        page.get_by_text("基础资料").click()
+        logger.info("点击物料清单菜单")
+        page.get_by_text("物料清单").click()
+
+        # 获取iframe内容实例，简化后续代码
+        bom_frame = page.locator("iframe[name=\"supos-tab-framework-2\"]").content_frame
+        logger.info("进入物料清单表格页面，开始执行列头操作")
+
+        # 核心操作：去除重复点击，保留有效操作步骤
+        bom_frame.locator("div").filter(has_text="新增导入导出序号父项产品编码父项产品名称父项产品规格父项产品来源父项单位子项产品编码子项产品名称子项产品规格子项产品来源备注子项单位创建人单位用量创建时间更新人").nth(4).click()
+        bom_frame.get_by_role("columnheader", name="序号").click()
+        bom_frame.get_by_role("columnheader", name="父项产品编码").click()
+        bom_frame.get_by_role("columnheader", name="父项产品名称").click()
+        bom_frame.get_by_role("columnheader", name="父项产品规格").click()
+        bom_frame.get_by_role("columnheader", name="父项产品来源").click()
+        bom_frame.get_by_role("columnheader", name="父项单位").click()
+        bom_frame.get_by_role("columnheader", name="子项产品编码").click()
+        bom_frame.get_by_role("columnheader", name="子项产品名称").click()
+        bom_frame.get_by_role("columnheader", name="子项产品规格").click()
+        bom_frame.get_by_role("columnheader", name="子项产品来源").click()
+        bom_frame.get_by_role("columnheader", name="备注").click()
+        bom_frame.get_by_role("columnheader", name="子项单位").click()
+        bom_frame.get_by_role("columnheader", name="创建人").click()
+        bom_frame.get_by_role("columnheader", name="单位用量").click()
+        bom_frame.get_by_role("columnheader", name="创建时间").click()
+        bom_frame.get_by_role("columnheader", name="更新人").click()
+        bom_frame.get_by_role("columnheader", name="更新时间").click()
+        bom_frame.get_by_role("columnheader", name="操作").click()
+
+        logger.info("bom_list_data用例执行完成")
+2026-04-23 16:42:00,409 - INFO - logger.py:104 - info - 不需要AI分层，保存格式化后的代码
+2026-04-23 16:42:00,411 - INFO - logger.py:104 - info - 格式化后的代码已保存: D:\install\auto_ui-master\src\testcase\LD\bom_management\test_bom_list_data.py

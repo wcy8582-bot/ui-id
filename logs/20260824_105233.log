@@ -1,0 +1,12 @@
+2026-08-24 10:52:33,726 - INFO - logger.py:105 - info - 模块定义加载成功，包含 1 个项目，30 个模块
+2026-08-24 10:52:35,361 - INFO - logger.py:105 - info - SQLite 数据库连接成功: D:\Program Files\微信\xwechat_files\wxid_fd2h0grryueg22_11ca\msg\file\2026-08\li\li\ui-id\data/test_results.db
+2026-08-24 10:52:35,373 - INFO - logger.py:105 - info - SQLite 数据库连接已关闭
+2026-08-24 10:52:35,374 - INFO - logger.py:105 - info - 热更新监控器已启动，监控目录: D:\Program Files\微信\xwechat_files\wxid_fd2h0grryueg22_11ca\msg\file\2026-08\li\li\ui-id\src
+2026-08-24 10:52:40,954 - INFO - logger.py:105 - info - SQLite 数据库连接成功: D:\Program Files\微信\xwechat_files\wxid_fd2h0grryueg22_11ca\msg\file\2026-08\li\li\ui-id\data/test_results.db
+2026-08-24 10:52:40,955 - ERROR - logger.py:113 - error - 查询用例信息失败: no such table: test_case_info
+2026-08-24 10:52:40,956 - INFO - logger.py:105 - info - SQLite 数据库连接已关闭
+2026-08-24 10:53:22,119 - INFO - logger.py:105 - info - SQLite 数据库连接成功: D:\Program Files\微信\xwechat_files\wxid_fd2h0grryueg22_11ca\msg\file\2026-08\li\li\ui-id\data/test_results.db
+2026-08-24 10:53:22,120 - ERROR - logger.py:113 - error - 查询用例信息失败: no such table: test_case_info
+2026-08-24 10:53:22,121 - INFO - logger.py:105 - info - SQLite 数据库连接已关闭
+2026-08-24 10:53:31,889 - INFO - logger.py:105 - info - 热更新监控器已停止
+2026-08-24 10:53:31,889 - INFO - logger.py:105 - info - 服务已停止

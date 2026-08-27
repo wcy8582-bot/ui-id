@@ -1,0 +1,23 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行测试: TestLabelPrintTemplateCreate
+[32mINFO    [0m playwright_ui_automation:logger.py:104 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始执行用例：verify_new_create_exists_function
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例ms的id：101112
+[32mINFO    [0m playwright_ui_automation:logger.py:104 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:104 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:104 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:104 检查是否存在在线用户超限提示
+[32mINFO    [0m playwright_ui_automation:logger.py:104 已自动点击在线用户提示的确定按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:104 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:104 系统登录完成，开始业务操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 导航进入标签打印配置页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 获取业务iframe完成，开始新增操作
+[32mINFO    [0m playwright_ui_automation:logger.py:104 填写模板基础信息，模板ID=666，模板名称=测试
+[32mINFO    [0m playwright_ui_automation:logger.py:104 选择模板类型
+[32mINFO    [0m playwright_ui_automation:logger.py:104 点击保存按钮完成新增
+[32mINFO    [0m playwright_ui_automation:logger.py:104 用例verify_new_create_exists_function执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:104 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:104 测试执行完成: TestLabelPrintTemplateCreate

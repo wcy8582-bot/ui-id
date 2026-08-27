@@ -1,0 +1,24 @@
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行测试: TestModalTimeValidation
+[32mINFO    [0m playwright_ui_automation:logger.py:96 启动浏览器: Chromium, 无头模式: False
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始执行测试用例：modal_time_validation
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用例ms的id：0
+[32mINFO    [0m playwright_ui_automation:logger.py:96 ============================================================
+[32mINFO    [0m playwright_ui_automation:logger.py:96 登录系统
+[32mINFO    [0m playwright_ui_automation:logger.py:96 开始登录 LD 项目...
+[32mINFO    [0m playwright_ui_automation:logger.py:96 登录URL: https://test2.saas-test3.supcon.com:32188
+[32mINFO    [0m playwright_ui_automation:logger.py:96 用户名: admin
+[32mINFO    [0m playwright_ui_automation:logger.py:96 LD 项目登录成功！
+[32mINFO    [0m playwright_ui_automation:logger.py:96 进入产品档案菜单
+[32mINFO    [0m playwright_ui_automation:logger.py:96 点击新增产品按钮
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证新增弹窗基础信息可见
+[32mINFO    [0m playwright_ui_automation:logger.py:96 操作标准工时输入组件
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证标准工时组件显示正确
+[32mINFO    [0m playwright_ui_automation:logger.py:96 修改标准工时小时数值为2.1
+[32mINFO    [0m playwright_ui_automation:logger.py:96 保存新增产品信息
+[32mINFO    [0m playwright_ui_automation:logger.py:96 验证保存后标准工时显示正确
+[32mINFO    [0m playwright_ui_automation:logger.py:96 测试用例modal_time_validation执行完成
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭页面
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器上下文
+[32mINFO    [0m playwright_ui_automation:logger.py:96 关闭浏览器
+[32mINFO    [0m playwright_ui_automation:logger.py:96 测试执行完成: TestModalTimeValidation

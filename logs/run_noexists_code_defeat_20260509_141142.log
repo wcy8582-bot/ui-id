@@ -1,0 +1,36 @@
+2026-05-09 14:11:42,093 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 14:11:42,094 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 14:11:42,094 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\customer_file\\test_noexists_code_defeat.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_141142']
+2026-05-09 14:11:44,102 - INFO - logger.py:104 - info - 开始执行测试: TestImportProductCodeExists
+2026-05-09 14:11:44,114 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 14:11:47,920 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:11:47,925 - INFO - logger.py:104 - info - 开始执行测试用例：noexists_code_defeat
+2026-05-09 14:11:47,928 - INFO - logger.py:104 - info - 用例ms的id：101231
+2026-05-09 14:11:47,934 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 14:11:47,937 - INFO - logger.py:104 - info - 测试文件: D:\install\auto_ui-master\src\data\LD\customer_file\101231测试文件.xlsx
+2026-05-09 14:11:47,947 - INFO - logger.py:104 - info - 完成系统登录
+2026-05-09 14:11:47,964 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 14:11:47,971 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 14:11:47,986 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 14:11:51,838 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 14:11:52,407 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 14:11:58,427 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 14:11:58,431 - INFO - logger.py:104 - info - 导航进入客户档案页面
+2026-05-09 14:11:59,667 - INFO - logger.py:104 - info - 定位客户资料页面
+2026-05-09 14:11:59,668 - INFO - logger.py:104 - info - 定位第一个客户数据行
+2026-05-09 14:11:59,671 - INFO - logger.py:104 - info - 点击第一个客户数据行，激活客户产品映射页面
+2026-05-09 14:12:00,885 - INFO - logger.py:104 - info - 等待客户行选中状态
+2026-05-09 14:12:00,898 - INFO - logger.py:104 - info - 定位客户产品映射区域的导入按钮
+2026-05-09 14:12:00,900 - INFO - logger.py:104 - info - 等待导入按钮可用
+2026-05-09 14:12:00,911 - INFO - logger.py:104 - info - 点击导入按钮
+2026-05-09 14:12:01,446 - INFO - logger.py:104 - info - 上传导入文件，确认导入
+2026-05-09 14:12:02,564 - INFO - logger.py:104 - info - 等待导入完成
+2026-05-09 14:12:05,589 - INFO - logger.py:104 - info - 关闭弹窗，用例执行完成
+2026-05-09 14:12:06,137 - INFO - logger.py:104 - info - 测试用例noexists_code_defeat执行完成
+2026-05-09 14:12:06,144 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 14:12:06,167 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 14:12:06,237 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 14:12:06,670 - INFO - logger.py:104 - info - 测试执行完成: TestImportProductCodeExists
+2026-05-09 14:12:07,870 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 14:12:07,881 - INFO - logger.py:104 - info - 测试执行完成，耗时: 25.73秒
+2026-05-09 14:12:07,881 - INFO - logger.py:104 - info - 执行结果: 成功

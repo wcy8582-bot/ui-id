@@ -1,0 +1,23 @@
+2026-05-09 08:48:39,098 - INFO - logger.py:104 - info - 开始执行测试
+2026-05-09 08:48:39,099 - INFO - logger.py:104 - info - 使用单线程运行测试，避免Playwright Sync API在asyncio循环中的错误
+2026-05-09 08:48:39,099 - INFO - logger.py:104 - info - Pytest执行参数: ['D:\\install\\auto_ui-master\\src\\testcase\\LD\\bom_management\\test_verify_child_product.py', '-p', 'no:xdist', '--tb=short', '--tb=short', '--timeout=180', '--alluredir', 'reports\\allure_report_20260509_084839']
+2026-05-09 08:48:47,869 - INFO - logger.py:104 - info - 开始执行测试: TestVerifyChildProduct
+2026-05-09 08:48:47,970 - INFO - logger.py:104 - info - 启动浏览器: Chromium, 无头模式: False
+2026-05-09 08:48:51,178 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 08:48:51,181 - INFO - logger.py:104 - info - 开始执行测试用例：verify_child_product
+2026-05-09 08:48:51,183 - INFO - logger.py:104 - info - 用例ms ID：100991
+2026-05-09 08:48:51,185 - INFO - logger.py:104 - info - ============================================================
+2026-05-09 08:48:51,187 - INFO - logger.py:104 - info - 开始登录 LD 项目...
+2026-05-09 08:48:51,190 - INFO - logger.py:104 - info - 登录URL: https://test2.saas-test3.supcon.com:32188
+2026-05-09 08:48:51,192 - INFO - logger.py:104 - info - 用户名: admin
+2026-05-09 08:48:54,809 - INFO - logger.py:104 - info - 检查是否存在在线用户超限提示
+2026-05-09 08:48:55,366 - INFO - logger.py:104 - info - 已自动点击在线用户提示的确定按钮
+2026-05-09 08:49:01,390 - INFO - logger.py:104 - info - LD 项目登录成功！
+2026-05-09 08:49:01,393 - INFO - logger.py:104 - info - 登录成功，关闭登录后弹窗
+2026-05-09 08:49:32,360 - INFO - logger.py:104 - info - 关闭页面
+2026-05-09 08:49:32,394 - INFO - logger.py:104 - info - 关闭浏览器上下文
+2026-05-09 08:49:32,427 - INFO - logger.py:104 - info - 关闭浏览器
+2026-05-09 08:49:32,725 - INFO - logger.py:104 - info - 测试执行完成: TestVerifyChildProduct
+2026-05-09 08:49:33,644 - ERROR - logger.py:112 - error - 生成Allure报告失败: Allure命令行工具未找到，请确保已安装并添加到系统PATH中
+2026-05-09 08:49:33,644 - INFO - logger.py:104 - info - 测试执行完成，耗时: 54.52秒
+2026-05-09 08:49:33,645 - INFO - logger.py:104 - info - 执行结果: 失败
